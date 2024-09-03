@@ -17,10 +17,14 @@ header{
     height: 40vh;
     background-size: cover;
     background-position: center;
+    align-items:end;
+    justify-content: left;
 }
 header h1{
-    color: rgb(231, 227, 227);
-    font-size: 3rem;
+    color: black;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    
 }
 .columns{
     column-count: 3;
@@ -38,4 +42,18 @@ div img{
 }
 footer{
     padding-top: 30px;
+}
+
+/*tablet*/
+@media only screen and (min-width: 767px){
+    header h1{
+        font-size: 40px;
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 991px){
+    header h1{
+        font-size: 50px;
+    }
 }
