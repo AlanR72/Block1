@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* header */
+header{
+    background-image: url(images/header.jpg);
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+header h1{
+    color: rgb(231, 227, 227);
+    font-size: 3rem;
+}
+.columns{
+    column-count: 3;
+    column-width: 33%;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 10px;
+    width:100%;
+}
+div{
+    width: 100%;
+}
+div img{
+    height: 50vh;
+}
+footer{
+    padding-top: 30px;
+}
