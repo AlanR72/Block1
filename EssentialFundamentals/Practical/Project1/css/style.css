@@ -32,17 +32,21 @@ header h1{
 .columns {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .columns div{
     flex: 1 1 15em;
     margin: 3em 1em;
     line-height: 25px;
+    max-width: 15em;
 }
 div p{
     padding: .5em;
 }
 section div img {
-    width: 100%;;
+    width: 100%;
+    
+    
 }
 .parallax{
     background: url(../media/wheel.jpg) center/cover no-repeat fixed;
@@ -69,5 +73,8 @@ footer{
 @media only screen and (min-width: 991px){
     header h1{
         font-size: 50px;
+    }
+    section{
+        flex-direction: row;
     }
 }
