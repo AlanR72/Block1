@@ -20,6 +20,7 @@ header{
     background-position: center;
     align-items:end;
     justify-content: left;
+    background-color: lightgrey;
 }
 header h1{
     color: black;
@@ -28,25 +29,27 @@ header h1{
     
     
 }
-.columns{
-    margin-top: 2%;
+.columns {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
-    
-    
 }
 .columns div{
     flex: 1 1 15em;
+    margin: 3em 1em;
+    line-height: 25px;
 }
 div p{
-    padding: 4%;
+    padding: .5em;
 }
 section div img {
-    height: 60vh;
-
+    width: 100%;;
 }
+.parallax{
+    background: url(../media/wheel.jpg) center/cover no-repeat fixed;
+    height: 20em;
+}
+
+
 footer{
     padding: 30px;
     background-color: darkgray;
@@ -57,8 +60,8 @@ footer{
 
 /*tablet*/
 @media only screen and (min-width: 767px){
-    header h1{
-        font-size: 40px;
+    body{
+        font-size: 24px;
     }
 }
 

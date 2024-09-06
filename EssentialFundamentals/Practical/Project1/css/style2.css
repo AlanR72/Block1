@@ -40,20 +40,40 @@ header h1{
     line-height: 25px;
 }
 div p{
+    width: 100%;
     padding: 4%;
 }
-section div img {
-    height: 60vh;
+.columns div img {
+    width: 100%;
+    
 }
 .parallax{
-    background-image: url()
+    background-image: url(../media/wheel.jpg);
     height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: blue;
+    background-color: lightgray;
     background-attachment: fixed;
 }
+.columns2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.columns2 div{
+    width:340px;
+    margin:4%;
+    line-height: 25px;
+}
+.columns2 p{
+    padding:4%;
+}
+.columns2 div img{
+    width: 100%;
+}
+
 footer{
     padding: 30px;
     background-color: darkgray;
@@ -67,11 +87,17 @@ footer{
     header h1{
         font-size: 40px;
     }
+    section div{
+        width: 330px;
+    }
 }
 
 /*desktop*/
 @media only screen and (min-width: 991px){
     header h1{
         font-size: 50px;
+    }
+    section{
+        flex-direction: row;
     }
 }
