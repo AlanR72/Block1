@@ -1,7 +1,7 @@
 let counter = 0;
 
 const activeUsers = [
-    {username: "minion", password: "GCCrockets"},
+    {username: "minions", password: "GCCrockets"},
     {username: "user1", password: "password1"},
     {username: "user2", password: "password2"},
     {username: "user3", password: "password3"},
