@@ -10,6 +10,7 @@ img{
 main{
    display: flex;
    flex-wrap: wrap;
+   font-family:Arial, Helvetica, sans-serif;
 }
 .product{
     flex: 1 1 15rem;
@@ -18,6 +19,8 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 30px;
+    border: solid 5px #fbf6f6;
+    border-radius: 10px;
 }
 .sticker{
     position: absolute;
@@ -25,7 +28,7 @@ main{
     /* left: 0; */
     width: 5rem;
     height: 5rem;
-    background-color: red;
+    background-color: #cb1818;
     color: white;
     display: flex;
     justify-content: center;
@@ -33,4 +36,18 @@ main{
     border-radius: 50%;
     text-align: center;
     border: white 5px solid;
+}
+.product_desc{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h3{
+    padding: 1rem;
+}
+.price{
+    padding-bottom: 1rem;
+    color: #cb1818;
+    font-weight: bold;
+    
 }
