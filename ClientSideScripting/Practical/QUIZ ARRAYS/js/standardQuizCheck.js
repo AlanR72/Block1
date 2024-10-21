@@ -1,5 +1,5 @@
 //Array containing questions
-var questions = [
+let questions = [
     "Q1: What is the capital city of Scotland?",
     "Q2: What is the capital city of Ireland?",
     "Q3: What is the capital city of Peru?"
@@ -8,7 +8,8 @@ var questions = [
 //Function to set questions in HTML
 function setQuestions(){
     //loop through questions
-    for(var i=0; i<questions.length; i++){
+    for(var i=0; i < questions.length; i++)
+        {
         //Set the question text in the corresponding label element
         document.getElementById('q'+ i).innerHTML = questions[i];
     }
