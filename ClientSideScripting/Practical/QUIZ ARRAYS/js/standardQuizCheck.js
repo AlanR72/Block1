@@ -24,7 +24,7 @@ function checkAnswers(){
 
         //If at least one checkbox is checked for the current question
         if(checkboxes.length > 0){
-            var correctAnswers = getCorrectAnswer(i);//Get correct answer for current question
+            var correctAnswers = getCorrectAnswers(i);//Get correct answer for current question
             var userAnswers = []; //Array to store user-selected answers
 
             //Push value of each checked box to userAnswers array
