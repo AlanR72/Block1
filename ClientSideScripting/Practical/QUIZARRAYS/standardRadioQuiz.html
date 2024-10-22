@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Quiz</title>
+    <link type="stylesheet" href="css/standardRadioQuiz.css">
+    <script src="js/standardRadioQuiz.js"></script>
+</head>
+<body onload="setQuestions()">
+        <div class="container">
+            <h1>GCC - Numpties</h1>
+    
+            <label for="aq0" id="q0"></label>
+            <div  id="aq0">
+                <input type="radio" name="q0" value="edinburgh">Edinburgh<br>
+                <input type="radio" name="q0" value="glasgow">Glasgow<br>
+                <input type="radio" name="q0" value="aberdeen">Aberdeen<br>
+                <input type="radio" name="q0" value="dundee">Dundee<br>
+            </div>
+    
+            <label for="aq1" id="q1"></label>
+            <div  id="aq1">
+                <input type="radio" name="q1" value="dublin">Dublin<br>
+                <input type="radio" name="q1" value="cork">Cork<br>
+                <input type="radio" name="q1" value="galway">Galway<br>
+                <input type="radio" name="q1" value="limerick">Limerick<br>
+            </div>
+    
+            <label for="aq2" id="q2"></label>
+            <div  id="aq2">
+                <input type="radio" name="q2" value="lima">Lima<br>
+                <input type="radio" name="q2" value="cusco">Cusco<br>
+                <input type="radio" name="q2" value="arequipa">Arequipa<br>
+                <input type="radio" name="q2" value="trujillo">Trujillo<br>
+            </div>
+
+            <label for="aq3" id="q3"></label>
+            <div  id="aq3">
+                <input type="radio" name="q3" value="paris">Paris<br>
+                <input type="radio" name="q3" value="lyon">Lyon<br>
+                <input type="radio" name="q3" value="marseille">Marseille<br>
+                <input type="radio" name="q3" value="nice">Nice<br>
+            </div>
+
+            <label for="aq4" id="q4"></label>
+            <div  id="aq4">
+                <input type="radio" name="q4" value="berlin">Berlin<br>
+                <input type="radio" name="q4" value="hamburg">Hamburg<br>
+                <input type="radio" name="q4" value="nuremberg">Nuremberg<br>
+                <input type="radio" name="q4" value="cologne">Cologne<br>
+            </div>
+    
+            <button onclick="checkAnswers()">Submit</button>
+            <label for="" id="score">Score: </label>
+    
+        </div>
+        
+    
+</body>
+</html>
