@@ -1,5 +1,5 @@
 //Array containing questions
-let questions = [
+var questions = [
     "Q1: What is the capital city of Scotland?",
     "Q2: What is the capital city of Ireland?",
     "Q3: What is the capital city of Peru?"
