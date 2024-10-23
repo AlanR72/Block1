@@ -6,7 +6,7 @@
 body{
     display: flex;
     background-color: gray;
-    height: 100vh;
+    height: 140vh;
     align-items: center; 
     justify-content: center;
     margin: 0;
@@ -18,18 +18,23 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    width: 80%;
+    height: 80%;
+    border-radius: 25% 5%;
+    margin-top: 2%;
+    
 }
 input[type="radio"]{
     margin-top: 5px;
     margin-right: 8px;
 }
 label{
-    width: 30%;
+    width: 50%;
     height: 5%;
     margin-left: 5%;
     border: 2px solid rgb(143, 139, 139);
     vertical-align: center;
-    margin-top: 1%;
+    margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,4 +49,11 @@ button{
     width: 15%;
     text-align: left;
     margin-left: 5%;
+}
+h1{
+    margin-top: 2%;
+}
+.score{
+    margin-bottom: 5%;
+    width: 30%;
 }
