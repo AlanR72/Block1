@@ -20,7 +20,7 @@ function checkAnswers(){
     var counter = 0; //Counter to keep track of correct answers
     //Loop through each question
     for(var i=0; i<questions.length; i++){
-        var checkboxes = document.querySelectorAll('input[name="q'+ i +'"]:checked');//Get checked boxes for current question
+        var checkboxes = document.querySelectorAll('input[name="q'+i+'"]:checked');//Get checked boxes for current question
 
         //If at least one checkbox is checked for the current question
         if(checkboxes.length > 0){
