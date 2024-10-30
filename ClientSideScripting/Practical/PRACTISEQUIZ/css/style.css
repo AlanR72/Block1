@@ -1,0 +1,74 @@
+body{
+    font-family: "Walter Turncoat", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7D9B9D;
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+    background-color: #67ECF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 80%;
+    border-radius: 5%;
+    margin-top: 100px;
+    color: #736860;
+}
+
+label{
+    width: 40%;
+    height: 5%;
+    margin-left: 5%;
+    border: 5px solid #B3947F;
+    border-radius: 5px;
+    vertical-align: center;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+#aq0,#aq1,#aq2{
+    margin-left: 5%;
+}
+
+#aq3,#aq4,#aq5,#aq6,#aq7,#aq8,#aq9,#aq10{
+    width: 25%;
+    text-align: left;
+    margin-left: 5%;
+}
+input[type='text']{
+    width: 25%;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    background-color: #B3947F;
+    border-radius: 5px;
+    
+}
+button{
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 1%;
+    border-radius: 5px;
+    background-color:#7D9B9D;
+    font-size: large;
+    color: #736860;
+    border: 5px solid#B3947F
+}
+.score{
+    width: 30%;
+    margin-bottom: 25px;
+}
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    
+</head>
+<body onload="setQuestions()">
+    <div class="container">
+        <h1>Quiz - zzilla</h1>
+        <!--Start of standard input questions-->
+        <label for="aq0" id="q0"></label>
+        <input type="text" id="aq0">
+
+        <label for="aq1" id="q1"></label>
+        <input type="text" id="aq1">
+
+        <label for="aq2" id="q2"></label>
+        <input type="text" id="aq2">
+        <!--Start of checkbox questions-->
+        <label for="aq3" id="q3"></label>
+        <div  id="aq3">
+            <input type="checkbox" name="q3" value="william">William<br>
+            <input type="checkbox" name="q3" value="benjamin">Benjamin<br>
+            <input type="checkbox" name="q3" value="edward">Edward<br>
+            <input type="checkbox" name="q3" value="frederick">Frederick<br>
+        </div>
+
+        <label for="aq4" id="q4"></label>
+        <div  id="aq4">
+            <input type="checkbox" name="q4" value="sooty">Sooty<br>
+            <input type="checkbox" name="q4" value="paddington">Paddington<br>
+            <input type="checkbox" name="q4" value="yogi">Yogi<br>
+            <input type="checkbox" name="q4" value="bigted">Big Ted<br>
+        </div>
+
+        <label for="aq5" id="q5"></label>
+        <div  id="aq5">
+            <input type="checkbox" name="q5" value="erica">Erica<br>
+            <input type="checkbox" name="q5" value="edna">Edna<br>
+            <input type="checkbox" name="q5" value="enid">Enid<br>
+            <input type="checkbox" name="q5" value="elsa">Elsa<br>
+        </div>
+        <!--Start of radio questions-->
+        <label for="aq6" id="q6"></label>
+            <div  id="aq6">
+                <input type="radio" name="q6" value="tigger">Tigger<br>
+                <input type="radio" name="q6" value="rocky">Rocky<br>
+                <input type="radio" name="q6" value="khan">Khan<br>
+                <input type="radio" name="q6" value="rajah">Rajah<br>
+            </div>
+    
+            <label for="aq7" id="q7"></label>
+            <div  id="aq7">
+                <input type="radio" name="q7" value="therobinclub">The Robin Club<br>
+                <input type="radio" name="q7" value="thebadgerclub">The Badger Club<br>
+                <input type="radio" name="q7" value="the squirrel club">The Squirrel Club<br>
+                <input type="radio" name="q7" value="theowlclub">The Owl Club<br>
+            </div>
+    
+            <label for="aq8" id="q8"></label>
+            <div  id="aq8">
+                <input type="radio" name="q8" value="bark">Bark<br>
+                <input type="radio" name="q8" value="talk">Talk<br>
+                <input type="radio" name="q8" value="rollover">Roll Over<br>
+                <input type="radio" name="q8" value="beg">Beg<br>
+            </div>
+
+           <label for="aq9" id="q9"></label>
+            <div  id="aq9">
+                <input type="radio" name="q9" value="gardenshed">Garden Shed<br>
+                <input type="radio" name="q9" value="bike">His bike<br>
+                <input type="radio" name="q9" value="torch">A torch<br>
+                <input type="radio" name="q9" value="museumclock">Museum Clock<br>
+            </div>
+
+            <button onclick="checkAnswers()">Check your answers!</button>
+            <label for="" class="score" id="score">Score: </label>
+            
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
