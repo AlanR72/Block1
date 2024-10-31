@@ -72,7 +72,7 @@ function checkAnswers(){
         counter++;
     } else{
         document.getElementById('q3').style.backgroundColor = 'red';
-        document.getElementById('q3').innerHTML = 'Sorry, his name is William.';
+        document.getElementById('q3').innerHTML = 'Incorrect, his name is William.';
         
     }
 
@@ -82,7 +82,7 @@ function checkAnswers(){
         counter++;
     } else{
         document.getElementById('q4').style.backgroundColor = 'red';
-        document.getElementById('q4').innerHTML = 'Sorry, his name is Paddington.';
+        document.getElementById('q4').innerHTML = 'Incorrect, his name is Paddington.';
         
     }
 
@@ -92,7 +92,7 @@ function checkAnswers(){
         counter++;
     } else{
         document.getElementById('q5').style.backgroundColor = 'red';
-        document.getElementById('q5').innerHTML = 'Sorry, her name is Edna.';
+        document.getElementById('q5').innerHTML = 'Incorrect, her name is Edna.';
 
     }
 
@@ -102,7 +102,7 @@ function checkAnswers(){
         counter++;
     } else{
         document.getElementById('q6').style.backgroundColor = 'red';
-        document.getElementById('q6').innerHTML = 'Sorry, his name is Rajah.';
+        document.getElementById('q6').innerHTML = 'Incorrect, his name is Rajah.';
 
     }
 
@@ -112,7 +112,7 @@ function checkAnswers(){
         counter++;
     } else{
         document.getElementById('q7').style.backgroundColor = 'red';
-        document.getElementById('q7').innerHTML = 'Sorry, he runs The Squirrel Club.';
+        document.getElementById('q7').innerHTML = 'Incorrect, he runs The Squirrel Club.';
 
     }
     if(ansQ8 && ansQ8.value.toLowerCase() === 'talk'){
@@ -121,7 +121,7 @@ function checkAnswers(){
         counter++;
     } else{
         document.getElementById('q8').style.backgroundColor = 'red';
-        document.getElementById('q8').innerHTML = 'Sorry, he can talk.';
+        document.getElementById('q8').innerHTML = 'Incorrect, he can talk.';
 
     }
 
@@ -131,14 +131,14 @@ function checkAnswers(){
         counter++;
     } else{
         document.getElementById('q9').style.backgroundColor = 'red';
-        document.getElementById('q9').innerHTML = 'Sorry, he uses the museum clock.';
+        document.getElementById('q9').innerHTML = 'Incorrect, he uses the museum clock.';
         
     }
     if(counter <= 5){
-    document.getElementById('score').innerHTML = 'Sorry you failed by scoring'+ counter + ' out of 10.';
+    document.getElementById('score').innerHTML = 'Sorry you failed by scoring '+'<br>' + counter + ' out of 10.';
     document.getElementById('score').style.backgroundColor = 'red';
     }else{
-        document.getElementById('score').innerHTML = 'Congratulations you have passed by scoring '+ counter + ' out of 10.';
+        document.getElementById('score').innerHTML = 'Congratulations you have passed by scoring '+'<br>'+ counter + ' out of 10.';
         document.getElementById('score').style.backgroundColor = '#84F53F';
     }
 }
