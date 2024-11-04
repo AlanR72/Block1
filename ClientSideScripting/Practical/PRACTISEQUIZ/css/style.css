@@ -15,7 +15,8 @@ body{
 
 .container{
     text-align: center;
-    background-color: #67ECF5;
+    background-image: url(../media/cloud-background.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
