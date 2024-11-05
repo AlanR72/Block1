@@ -142,3 +142,4 @@ function checkAnswers(){
         document.getElementById('score').style.backgroundColor = '#84F53F';
     }
 }
+
