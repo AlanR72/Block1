@@ -142,4 +142,11 @@ function checkAnswers(){
         document.getElementById('score').style.backgroundColor = '#84F53F';
     }
 }
-
+document.getElementById("fade-button").addEventListener("click", function() {
+    var section = document.getElementById("fade-section");
+    section.classList.add("visible");
+  });
+document.getElementById("fade-button2").addEventListener("click", function() {
+    var section = document.getElementById("fade-section2");
+    section.classList.add("visible2");
+  });
