@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+h1{
+    font-size: 3em;
+}
+nav{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    position: sticky;
+    background-color: #333126;
+}
+
+/*positioning for hamburger icon*/
+.hamburger{
+    position: absolute;
+    right: 50px;
+    color:#F89F0F;
+    font-size: 3em;
+    cursor: pointer;
+    padding-top: 20px;
+}
+/*code linked to javascript for click of hamburger*/
+.active{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    top: 120px;
+    
+    background-color: #333126;
+}
+#mobile-nav{
+    width: 100%;
+}
+.dignans-logo{
+    padding: 25px;
+}
+nav ul{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    display: none;/*display none made visible with media query*/
+}
+nav div{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #F89F0F;
+}
+ul li{
+    font-size: 1.4em;
+    list-style: none;
+    border-bottom: 3px solid #f89f0f;
+    padding: 10px;
+    width:100%;
+    
+}
+
+@media only screen and (min-width: 991px){
+    nav{
+        align-items: center;
+        justify-content: right;
+        padding-right: 10px;
+        height: 150px;
+    }
+   .dignans-logo{
+    position: absolute;
+    left: 0px;
+   }
+    
+    nav ul{
+        display: contents;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    ul li{
+       border: none;
+       padding: 30px;
+    }
+    
+    .hamburger{
+        display: none;
+    }
+    
+}
+
+/*Start of header section*/
+
+.header{
+    background-image: url(../media/main3.jpg);
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    align-items:flex-end;
+}
+h1{
+    color:#F89F0F;
+    padding: 10px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/*Start of footer section*/
+.footer-container{
+    background-color: #333126;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-logo{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.contact-details{
+    width: 25%
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-nav{
+    width: 25%
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media-icons{
+    width: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3em;
+}
+
