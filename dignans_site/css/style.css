@@ -5,6 +5,7 @@
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
     
 }
 h1{
@@ -12,10 +13,26 @@ h1{
 }
 nav{
     width: 100%;
-    height: 120px;
+    height: 13vh;
     display: flex;
     position: sticky;
     background-color: #333126;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    display: none;/*display none made visible with media query*/
+}
+nav ul li{
+    border-bottom: 3px solid #F89F0F;
+    font-size: 1.5em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /*positioning for hamburger icon*/
@@ -27,74 +44,73 @@ nav{
     cursor: pointer;
     padding-top: 20px;
 }
+.dignans-logo{
+    padding-top: 20px;
+    border: none;
+}
 /*code linked to javascript for click of hamburger*/
 .active{
     position: fixed;
-    height: 100vh;
+    height: 93vh;
     display: flex;
-    top: 120px;
-    
+    top: 13vh;
+    width: 100%;
     background-color: #333126;
-}
-#mobile-nav{
-    width: 100%;
-}
-.dignans-logo{
-    padding: 25px;
-}
-nav ul{
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    display: none;/*display none made visible with media query*/
-}
-nav div{
-    
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 a{
     text-decoration: none;
     color: #F89F0F;
 }
-ul li{
-    font-size: 1.4em;
-    list-style: none;
-    border-bottom: 3px solid #f89f0f;
-    padding: 10px;
-    width:100%;
-    
+#mobile-nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+nav a:hover, .current{
+    background-color: #f89f0f;
+    color: #333126;
+}
+nav a:active-item{
+    background-color: #f89f0f;
+    color: #333126;
+}
+.nav-container{
+    width: 100%;
+    display: flex;
 }
 
 @media only screen and (min-width: 991px){
-    nav{
-        align-items: center;
-        justify-content: right;
-        padding-right: 10px;
-        height: 150px;
-    }
-   .dignans-logo{
-    position: absolute;
-    left: 0px;
-   }
-    
+   
     nav ul{
         display: contents;
         display: flex;
         flex-direction: row;
-        
     }
-    ul li{
+    nav ul li{
        border: none;
-       padding: 30px;
+       text-align: center;
+       width: 18%
     }
-    
     .hamburger{
         display: none;
     }
     
+}
+
+/* desktop */
+@media only screen and (min-width: 1080px){
+    .active{
+        position: fixed;
+        height: unset;
+    }
+    nav  ul li{
+        width: 18%;
+    }
+    h1{
+        font-size: 3em;
+    }
 }
 
 /*Start of header section*/
@@ -103,7 +119,7 @@ ul li{
     background-image: url(../media/main3.jpg);
     display: flex;
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     align-items:flex-end;
@@ -121,33 +137,56 @@ h1{
 .footer-container{
     background-color: #333126;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
 }
 .footer-logo{
-    width: 25%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+    text-align: center;
+    padding-bottom: 2%;
+    margin-top: 2%;
 }
 .contact-details{
-    width: 25%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .footer-nav{
-    width: 25%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .social-media-icons{
-    width: 25%;
+    width: 50%;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
     font-size: 3em;
+    padding-bottom: 2%;
 }
+footer ul li{
+    list-style: none;
+    padding-bottom: 2%;
+}
+.copyright-bottom{
+    width: 100%;
+    background-color: #F89F0F;
+    height: 100px;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
