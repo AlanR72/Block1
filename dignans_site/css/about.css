@@ -70,17 +70,17 @@ h3{
     margin: 0px 20px 0px 20px;
 }
 
-@media screen and (min-width: 991px){
+@media only screen and (min-width: 991px){
     main{
         flex-direction: row;
     }
     .section1{
-        width: 45%;
+        width: 100%;
         margin-bottom: 10%;
         
     }
     .section2{
-        width: 45%;
+        width: 100%;
         
     }
     main{
