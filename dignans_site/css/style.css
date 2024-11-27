@@ -52,6 +52,7 @@ div a img{
 /* Apply flex to logo to avoid overlapping */
 .dignans-logo{
     display: flex;
+    
 }
 /*code linked to javascript for click of hamburger*/
 .active{

@@ -1,0 +1,90 @@
+main{
+    background-image: url(/media/cafepic1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #333126;
+    border: #f89f0f solid 3px;
+    color: #f89f0f;
+    margin: 5%;
+    padding: 3%;
+
+}
+.table1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding: 5%;
+}
+.table1 img{
+    display: flex;
+    width: 40%;
+    border: solid 3px #f89f0f;
+    margin-right: 5%;
+}
+.table2{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+}
+.table2 img{
+    display: flex;
+    width: 30%;
+    border: solid 3px #f89f0f;
+    margin-left: 10%;
+}
+th{
+    text-align: left;
+    padding-bottom: 4%;
+}
+
+
+.cafe-paragraph{
+    border: 3px solid #f89f0f;
+    width: 80%;
+    background-color: #333126;
+    color: #f89f0f;
+    margin: 5%;
+    padding: 3%;
+    text-align: justify;
+  
+}
+.cafe-paragraph img{
+    display: flex;
+}
+.cafe1{
+    float: right;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 40%;
+    border: #f89f0f solid 3px;
+}
+.cafe2{
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 40%;
+    border: #f89f0f solid 3px;
+}
+h3{
+    padding-bottom: 10%;
+}
+h4{
+    margin-top: 5%;
+    margin-left: 50%;
+}
+iframe{
+    width: 45%;
+    height: 45%;
+    margin-top:9%;
+    margin-left: 5%;
+}
+
