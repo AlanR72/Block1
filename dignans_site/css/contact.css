@@ -1,67 +1,65 @@
 main{
-    width: 100%;
-    height: 75vh;
-}
-
-.form-header{
-    color: #333126;
-    margin-top: 5%;
-    text-align: center;
-    font-size: 1.2rem;
-    padding-bottom: 20px;
-}
-
-main{
     background-image: url(/media/fork-and-pasta1.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 .form-wrapper{
-    width: 75%;;
-    height: 70vh;
+    display: flex;
+    justify-content: center;
     background-color: #F89F0F;
     display: flex;
     flex-direction: column;
-    margin-top: 50%;
+    margin-bottom: 40px;
+    margin-top: 400px;
+    width: 85%;
+}
+.form-header{
+    color: #333126;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 label{
+    font-size: 20px;;
     padding: 4%;
-    margin-left: 5%;
-
+    margin-left: 2%;
 }
-
 input{
+    font-size: 20px;
     padding: 2%;
-    width: 75%;
+    width: 90%;
     margin-left: 5%;
 }
 textarea{
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 2%;
-    width: 75%;
-    height: 20%;
+    width: 90%;
     margin-left: 5%;
-    margin-bottom: 5%;
+    
 }
 
 button{
     background-color: #333126;
     color: #F89F0F;
-    padding: 5%;
+    padding: 3%;
     font-size: 2em;
-    margin: 2px;
+    margin: 5%;
+}
+span{
+    font-size: 20px;
+    text-align: center;
+    padding: 3%;
 }
 
 @media only screen and (min-width: 991px){
     main{
         background-position: top;
         justify-content: left;
-        
     }
     .form-wrapper{
         width: 35%;
@@ -71,8 +69,8 @@ button{
     }
 }
 @media only screen and (min-width: 1080px){
-    .form-wrapper{
+    .content{
         height: 80%;
     }
-}
+} 
 
