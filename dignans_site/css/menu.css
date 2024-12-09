@@ -38,13 +38,26 @@ button{
     height: 1.5rem;
     border: #f89f0f solid 2px;
     font-size: 0.6rem;
+    font-weight: bold;
 }
-#bottom-div{
-    margin-bottom: 5%;
-}
+
 @media screen and (min-width: 991px){
     button{
         font-size: 1rem;
         height: 2.5rem;
     }
 }
+
+.menu-model{
+    display: none;
+}
+.show{
+    display: flex;
+}
+/* example */
+/* position: absolute;
+width: 100vw;
+height: 100vw;
+background: white;
+top: 0;
+left: 0; */
