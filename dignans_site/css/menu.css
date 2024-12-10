@@ -39,6 +39,7 @@ button{
     border: #f89f0f solid 2px;
     font-size: 0.6rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 991px){
@@ -47,17 +48,38 @@ button{
         height: 2.5rem;
     }
 }
-
+/* Ensure menu display is hidden until click event triggered */
 .menu-model{
     display: none;
 }
 .show{
     display: flex;
+    position: absolute;
+    width: 90vw;
+    height: 200vh;
+    background: white;
+    top: 200px;
+    left: 5%;
+    flex-direction: column;
+    
 }
-/* example */
-/* position: absolute;
-width: 100vw;
-height: 100vw;
-background: white;
-top: 0;
-left: 0; */
+.show h1,h3,ul{
+    padding: 30px;
+}
+
+.show ul, p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.menu_img{
+    display: flex;
+    width: 75%;
+    flex-direction: row;
+    margin-left: 6%;
+    padding-top: 2em;
+}
+.menu_img img{
+    width: 25%;
+    margin: 2%;
+    border: solid 3px#f89f0f;
+}
