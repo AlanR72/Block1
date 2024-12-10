@@ -63,7 +63,7 @@ button{
     flex-direction: column;
     
 }
-.show h1,h3,ul{
+.show h1,h3{
     padding: 30px;
 }
 
