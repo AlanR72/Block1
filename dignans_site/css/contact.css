@@ -6,6 +6,11 @@ main{
     display: flex;
     justify-content: center;
 }
+h1,h2,h3{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .form-wrapper{
     display: flex;
     justify-content: center;
@@ -20,7 +25,6 @@ main{
     color: #333126;
     margin-top: 2%;
     text-align: center;
-    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 label{
@@ -49,6 +53,7 @@ button{
     padding: 3%;
     font-size: 2em;
     margin: 5%;
+    cursor: pointer;
 }
 span{
     font-size: 20px;
@@ -73,4 +78,7 @@ span{
         height: 80%;
     }
 } 
-
+.status-message{
+    text-align: center;
+    font-size: 1.5em;;
+}
