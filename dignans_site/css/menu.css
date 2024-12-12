@@ -49,7 +49,7 @@ button{
     }
 }
 /* Ensure menu display is hidden until click event triggered */
-.menu-model{
+.hidden{
     display: none;
 }
 .show{
@@ -82,4 +82,29 @@ button{
     width: 25%;
     margin: 2%;
     border: solid 3px#f89f0f;
+}
+.close_button{
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media print{
+    nav, footer{
+        display: none;
+    }
+    .menu-wrapper{
+        display: none;
+    }
+    .menu_img{
+        display: none;
+    }
+    *{
+        color: #000
+    }
+    .print-only{
+        display: block;
+    }
+    .close_button{
+        display: none;
+    }
 }
