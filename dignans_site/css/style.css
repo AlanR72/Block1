@@ -169,6 +169,10 @@ footer ul li{
     list-style: none;
     padding-bottom: 2%;
 }
+footer ul li a:hover{
+    background-color: #F89F0F;
+    color: #333126;
+}
 footer{
     position: sticky;
 }

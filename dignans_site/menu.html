@@ -32,79 +32,99 @@
         <div class="menu-header">
             <h3>Welcome to Dignans Menu Page</h3>
             <p>Click on an item below for detailed a description.</p>
+            <p>(Don't forget to check out this month's Special Offers)</p>
         </div>
         <div class="menu-wrapper">
 
-            <div class="selection">
+            <div class="selection" id="special_offer">
+                <div class="img-container">
+                <img src="/media/SpecialOffer/specialofferpic.jpg" alt="delicious burgers">
+                </div>
+                <button>FEBUARY OFFERS</button>
+            </div>
+            <div class="selection" id="partyA">
                 <div class="img-container">
                 <img src="/media/PartyA-Images/vol-au-vents1.jpg" alt="plate of vol-au-vonts">
                 </div>
-                <button class="clicker" id="partyA">PARTY MENU A</button>
+                <button>PARTY MENU A</button>
             </div>
-            <div class="selection">
+            <div class="selection" id="partyB">
                 <div class="img-container">
                 <img src="/media/PartyB-Images/cocktailsandwich3.jpg" alt="image of a delicious sandwich">
                 </div>
-                <button class="clicker" id="partyB">PARTY MENU B</button>
+                <button class="clicker">PARTY MENU B</button>
             </div>
-            <div class="selection">
+            <div class="selection" id="lunch_Menu">
                 <div class="img-container" >
                 <img src="/media/Lunch-Images/rolls1.jpg" alt="image of a filled baguette">
                 </div>
-                <button class="clicker" id="lunchMenu">LUNCH MENU</button>
+                <button>LUNCH MENU</button>
             </div>
-            <div class="selection">
+            <div class="selection" id="dressing">
                 <div class="img-container">
                 <img src="/media/Dressing-Images/quiche1.jpg" alt="Quiche on a plate">
                 </div>
-                <button class="clicker" id="dressing">DRESSING</button>
+                <button>DRESSING</button>
             </div>
-            <div class="selection">
+            <div class="selection" id="office_Catering">
                 <div class="img-container">
                 <img src="/media/OfficeCatering-Images/bagels1.jpg" alt="Various delicious bagels">
                 </div>
-                <button class="clicker" id="office_catering">OFFICE CATERING</button>
+                <button>OFFICE CATERING</button>
             </div>
-            <div class="selection">
+            <div class="selection"id="everyday_Extras">
                 <div class="img-container">
                 <img src="/media/EverydayExtras-Images/seafood1.jpg" alt="plate of seafood">
                 </div>
-                <button class="clicker" id="everyday_extras">EVERYDAY EXTRAS</button>
+                <button>EVERYDAY EXTRAS</button>
             </div>
-            <div class="selection">
+            <div class="selection" id="exec_MenuA">
                 <div class="img-container">
                 <img src="/media/ExecMenuA/ham1.jpg" alt="joint of honey glazed ham">
                 </div>
-                <button class="clicker" id="exec_menuA">EXECUTIVE MENU A</button>
+                <button>EXECUTIVE MENU A</button>
             </div>
-            <div class="selection">
+            <div class="selection" id="exec_MenuB">
                 <div class="img-container">
                 <img src="/media/ExecMenuB/roastbeef1.jpg" alt="plate of roast beef">
                 </div>
-                <button class="clicker" id="exec_menuB">EXECUTIVE MENU B</button>
+                <button>EXECUTIVE MENU B</button>
             </div>
-            <div class="selection">
+            <div class="selection" id="exec_MenuC">
                 <div class="img-container">
                 <img src="/media/ExecMenuC/pennepasta1.jpg" alt="plate of pasta">
                 </div>
-                <button class="clicker" id="exec_menuC">EXECUTIVE MENU C</button>
+                <button>EXECUTIVE MENU C</button>
             </div>
-            <div class="selection">
+            <div class="selection" id="breakfast">
                 <div class="img-container">
                 <img src="/media/Breakfast-Images/breakfast1.jpg" alt="fried breakfast">
                 </div>
-                <button class="clicker" id="breakfast">BREAKFAST</button>
+                <button>BREAKFAST</button>
             </div>
-            <div class="selection">
+            <div class="selection" id="bbq">
                 <div class="img-container">
                 <img src="/media/OfficeBarb-Images/skewers1.jpg" alt="Skewers on a barbecue">
                 </div>
-                <button class="clicker" id="bbq">OFFICE BARBEQUES</button>
+                <button>OFFICE BARBEQUES</button>
             </div>
             
         </div>
         <div class="print-only">
+            <div class="menu-model hidden" id="special_offer_popup">
+            <div class="close_button" id="close_button0">&times;</div>
+            <h1>Febuary Special Offers</h1>
+            <p>This February, enjoy an irresistible special offer on burgers that will satisfy your cravings without breaking the bank! For a limited time, get a delicious, freshly made burger with all the fixings at an unbeatable price. Whether you prefer a classic cheeseburger, a juicy bacon burger, or a veggie-packed option, this offer has something for everyone. Plus, with every purchase, you’ll receive a free side of crispy fries and a refreshing drink to complete your meal. Don’t miss out—this February, treat yourself to a mouthwatering burger deal while it lasts!</p>
+            <h4>Burgers</h4>
+            <h5>Classic Burger: £2.50</h5>
+            <h5>Juicy Cheeseburger: £2.50</h5>
+            <h5>Very Special Veggie: £2.30</h5>
+            <div class="menu_img"><img src="/media/SpecialOffer/burger1.jpg"><img src="/media/SpecialOffer/burger2.jpg"><img src="/media/SpecialOffer/burger3.jpg"><img src="/media/SpecialOffer/burger4.jpg"></div>
+            <button class="print_button" id="">Print Special Offers</button>
+            <a class="download_anchor" href="/media/dignans_menu.pdf" download="">Download Full Dignans Menu.pdf</a>
+            </div>
             <div class="menu-model hidden" id="partyA_popup">
+                <div class="close_button" id="close_button">&times;</div>
                 <h1>Party A Menu</h1>
                 <h3>Menu A £3.00 per person</h3>
                 <ul>
@@ -117,9 +137,11 @@
                 </ul>
                 <p>If you wish to discuss any of the above menus please contact us.</p>
                 <div class="menu_img"><img src="/media/PartyA-Images/chickensataysticks1.jpg"><img src="/media/PartyA-Images/cocktailsandwich1.jpg"><img src="/media/PartyA-Images/indianfood1.jpg"><img src="/media/PartyA-Images/sausage1.jpg"></div>
-                <button class="close_button" id="close_button">Close</button>
+                <button class="print_button" id="">Print Party Menu A</button>
+                <a class="download_anchor" href="/media/dignans_menu.pdf" download="">Download Full Dignans Menu.pdf</a>
             </div>
             <div class="menu-model hidden" id="partyB_popup">
+                <div class="close_button" id="close_button1">&times;</div>
                 <h1>Party B Menu</h1>
                 <h3>Menu A £4.00 per person</h3>
                 <ul>
@@ -133,9 +155,11 @@
                 </ul>
                 <p>If you wish to discuss any of the above menus please contact us.</p>
                 <div class="menu_img"><img src="/media/PartyB-Images/minirolls1.jpg"><img src="/media/PartyB-Images/skewers1.jpg"><img src="/media/PartyB-Images/savoryeggs1.jpg"><img src="/media/PartyB-Images/quiche1.jpg"></div>
-                <button class="close_button" id="close_button1">Close</button>
+                <button class="print_button" id="">Print Party Menu B</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
             <div class="menu-model hidden" id="lunchMenu_popup">
+                <div class="close_button" id="close_button2">&times;</div>
                 <h1>Lunch Menus</h1>
                 <p>Freshly prepared rolls, baguettes, sandwiches, ciabattas, salad, and fruit boxes, plus lots more delivered to your door.</p>
                 <p>Mix and munch’ deal — pick two or more items from any section and get 10% discount.</p>
@@ -170,9 +194,11 @@
                     <li>Baby beetroot, buffalo mozzarella, grated carrot, sliced shallots, and a low fat mint yoghurt</li>
                 </ul>
                 <div class="menu_img"><img src="/media/Lunch-Images/ploughmans1.jpg"><img src="/media/Lunch-Images/baguette1.jpg"><img src="/media/Lunch-Images/saladbox1.jpg"><img src="/media/Lunch-Images/stovie1.jpg"></div>
-                <button class="close_button" id="close_button2">Close</button>
+                <button class="print_button" id="">Print Lunch Menu</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
             <div class="menu-model hidden" id="dressing_popup">
+                <div class="close_button" id="close_button3">&times;</div>
                 <h1>Dressing</h1>
                 <h3>Quiche</h3>
                 <p>Homemade vegetarian quiche with mixed salad.</p>
@@ -189,9 +215,11 @@
                     <li>Bottle fresh orange £0.80</li>
                 </ul>
                 <div class="menu_img"><img src="/media/Dressing-Images/fruits1.jpg"><img src="/media/Dressing-Images/melon1.jpg"><img src="/media/Dressing-Images/smoothies1.jpg"><img src="/media/Dressing-Images/traybake1.jpg"></div>
-                <button class="close_button" id="close_button3">Close</button>
+                <button class="print_button" id="">Print Dressing Menu</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
             <div class="menu-model hidden" id="officeCatering_popup">
+                <div class="close_button" id="close_button4">&times;</div>
                 <h1>Office Catering</h1>
                 <h3>The everyday buffet:</h3>
                 <ul>
@@ -206,9 +234,11 @@
                 <p>All disposables provided (plates, napkins, glasses, cutlery)</p>
                 <p>Free mineral water provided for parties of 10 or more.</p>
                 <div class="menu_img"><img src="/media/OfficeCatering-Images/creamcakes1.jpg"><img src="/media/OfficeCatering-Images/croissants1.jpg"><img src="/media/OfficeCatering-Images/fruit-platter1.jpg"><img src="/media/OfficeCatering-Images/wraps1.jpg"></div>
-                <button class="close_button" id="close_button4">Close</button>
+                <button class="print_button" id="">Print Office Catering Menu</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
             <div class="menu-model hidden" id="everyday_extras_popup">
+                <div class="close_button" id="close_button5">&times;</div>
                 <h1>Everyday Extras</h1>
                 <h3>(Nibbles for the everyday buffet)£1.25 pp</h3>
                 <p>Selection from:</p>
@@ -229,9 +259,11 @@
                 <p>This is only a sample of what we can provide.</p>
                 <p>Feel free to ask for advice. Both hot and cold dishes available to suit your facilities.</p>
                 <div class="menu_img"><img src="/media/EverydayExtras-Images/breadedprawns1.jpg"><img src="/media/EverydayExtras-Images/creamypepper1.jpg"><img src="/media/EverydayExtras-Images/croustades1.jpg"><img src="/media/EverydayExtras-Images/tartlets1.jpg"></div>
-                <button class="close_button" id="close_button5">Close</button>
+                <button class="print_button" id="">Print Everyday Extras Menu</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
             <div class="menu-model hidden" id="exec_menuA_popup">
+                <div class="close_button" id="close_button6">&times;</div>
                 <h1>Executive Menu A</h1>
                 <h3>Menu A £7.50 pp (minimum 10 persons)</h3>
                 <ul>
@@ -244,9 +276,11 @@
                     <li>Petit pans</li>
                 </ul>
                 <div class="menu_img"><img src="/media/ExecMenuA/game pie1.jpg"><img src="/media/ExecMenuA/petitpans1.jpg"><img src="/media/ExecMenuA/profiteroles1.jpg"><img src="/media/ExecMenuA/redonionsalad1.jpg"></div>
-                <button class="close_button" id="close_button6">Close</button>
+                <button class="print_button" id="">Print Executive Menu A</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
             <div class="menu-model hidden" id="exec_menuB_popup">
+                <div class="close_button" id="close_button7">&times;</div>
                 <h1>Executive Menu B</h1>
                 <h3>Menu B £9.00 pp (minimum 10 persons)</h3>
                 <ul>
@@ -260,9 +294,11 @@
                     <li>Petit pans</li>
                 </ul>
                 <div class="menu_img"><img src="/media/ExecMenuB/poached salmon.jpg"><img src="/media/ExecMenuB/cheesecake.jpg"><img src="/media/ExecMenuB/chicken and avacado.jpg"><img src="/media/ExecMenuB/couscous.jpg"></div>
-                <button class="close_button" id="close_button7">Close</button>
+                <button class="print_button" id="">Print Executive Menu B</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
             <div class="menu-model hidden" id="exec_menuC_popup">
+                <div class="close_button" id="close_button8">&times;</div>
                 <h1>Executive Menu C</h1>
                 <h3>Menu C £10.50 pp (minimum 10 persons)</h3>
                 <ul>
@@ -278,9 +314,11 @@
                     <li>Petit pans</li>
                 </ul>
                 <div class="menu_img"><img src="media/ExecMenuC/brandybasket1.jpg"><img src="media/ExecMenuC/greeksalad1.jpg"><img src="media/ExecMenuC/porkloin1.jpg"><img src="media/ExecMenuC/vegtartlet1.jpg"></div>
-                <button class="close_button" id="close_button8">Close</button>
+                <button class="print_button" id="">Print Executive Menu C</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
             <div class="menu-model hidden" id="breakfast_popup">
+                <div class="close_button" id="close_button9">&times;</div>
                 <h1>Breakfast</h1>
                 <h3>Hot breakfast £4.50 per person</h3>
                 <ul>
@@ -299,9 +337,11 @@
                 </ul><br>
                 <p>All equipment provided.</p>
                 <div class="menu_img"><img src="/media/Breakfast-Images/baconroll1.jpg"><img src="/media/Breakfast-Images/continental1.jpg"><img src="/media/Breakfast-Images/danish1.jpg"><img src="/media/Breakfast-Images/scone1.jpg"></div>
-                <button class="close_button" id="close_button9">Close</button>
+                <button class="print_button" id="">Print Breakfast Menu</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
             <div class="menu-model hidden" id="bbq_popup">
+                <div class="close_button" id="close_button10">&times;</div>
                 <h1>Office Barbecue</h1>
                 <p>We can organise a complete office barbeque including menus and staff</p><br>
                 <ul>
@@ -320,7 +360,8 @@
                 </ul>
                 <p>All disposables supplied. Drinks can be supplied on order £9.50 per person</p>
                 <div class="menu_img"><img src="/media/OfficeBarb-Images/pitta1.jpg"><img src="/media/OfficeBarb-Images/bratfurst1.jpg"><img src="/media/OfficeBarb-Images/potatosalad1.jpg"><img src="/media/OfficeBarb-Images/steaksandwich1.jpg"></div>
-                <button class="close_button" id="close_button10">Close</button>
+                <button class="print_button" id="">Print Office Barbecue Menu</button>
+                <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
         </div>
     </main>
@@ -345,7 +386,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">Terms and Conditions</a></li>
-                <li><a href="">Privacy Policy</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
             </ul>
         </div>

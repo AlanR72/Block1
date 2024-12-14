@@ -4,6 +4,7 @@ body{
     padding: 0;
     background-color: #333126;
     color: #f89f0f;
+    position: relative;
 }
 .menu-header{
     margin-top: 5%;
@@ -23,9 +24,15 @@ body{
     background-color: #f89f0f;
     margin: 4%;
     width: 25%;
+    cursor: pointer;
+}
+.selection:hover button{
+    background-color: #333126;
+    color: #f89f0f;
 }
 .img-container{
     width: 100%;
+
 }
 div img{
     width: 100%;
@@ -47,6 +54,13 @@ button{
         font-size: 1rem;
         height: 2.5rem;
     }
+    .show{
+        font-size: 1.6em;
+    }
+    .menu_img img{
+        border: solid 3px#f89f0f;
+    }
+
 }
 /* Ensure menu display is hidden until click event triggered */
 .hidden{
@@ -56,20 +70,27 @@ button{
     display: flex;
     position: absolute;
     width: 90vw;
-    height: 200vh;
+    height: 100vh;
     background: white;
-    top: 200px;
+    top: 10px;
     left: 5%;
     flex-direction: column;
-    
+    overflow: scroll;
 }
 .show h1,h3{
     padding: 30px;
 }
 
-.show ul, p{
+.show ul, p, h5, h4{
     margin-left: 50px;
     margin-right: 50px;
+    }
+.show p{
+    text-align: justify;
+}
+.show h5, h4{
+    margin-left: 50px;
+    margin-top: 3%;;
 }
 .menu_img{
     display: flex;
@@ -81,11 +102,46 @@ button{
 .menu_img img{
     width: 25%;
     margin: 2%;
-    border: solid 3px#f89f0f;
+    border: solid 1px#f89f0f;
+}
+.print_button{
+    background-color: #333126;
+    color: #f89f0f;
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 0.8em;
+    align-items: center;
+    justify-content: center;
+}
+.download_anchor{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f89f0f;
+    color: #333126;
+    width: 60%;
+    height: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.6rem;
+    cursor: pointer;
+    display: flex;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 6%;
+    font-size: 0.8em;
+    align-items: center;
+    justify-content: center;
 }
 .close_button{
-    width: 50%;
-    margin-left: 25%;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    padding: 2%;
+    cursor: pointer;
 }
 
 @media print{

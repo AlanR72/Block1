@@ -1,5 +1,18 @@
 //Javascript for individual menu items
 
+special_offer_display = document.getElementById('special_offer_popup'); // hidden as default
+special_offer_click = document.getElementById('special_offer');
+closeButton = document.getElementById('close_button0');
+
+special_offer_click.addEventListener('click',() =>{
+    special_offer_display.classList.add('show')
+})
+closeButton.addEventListener('click',() =>{
+    special_offer_display.classList.remove('show')
+
+})
+
+
 partyA_display = document.getElementById('partyA_popup'); // hidden as default
 partyA_click = document.getElementById('partyA');
 closeButton = document.getElementById('close_button');
@@ -27,7 +40,7 @@ closeButton.addEventListener('click',() =>{
 })
 
 lunchMenu_display = document.getElementById('lunchMenu_popup'); // hidden as default
-lunchMenu_click = document.getElementById('lunchMenu');
+lunchMenu_click = document.getElementById('lunch_Menu');
 closeButton = document.getElementById('close_button2');
 
 lunchMenu_click.addEventListener('click',() =>{
@@ -53,7 +66,7 @@ closeButton.addEventListener('click',() =>{
 })
 
 officeCatering_display = document.getElementById('officeCatering_popup'); // hidden as default
-officeCatering_click = document.getElementById('office_catering');
+officeCatering_click = document.getElementById('office_Catering');
 closeButton = document.getElementById('close_button4');
 
 officeCatering_click.addEventListener('click',() =>{
@@ -66,7 +79,7 @@ closeButton.addEventListener('click',() =>{
 })
 
 everydayExtras_display = document.getElementById('everyday_extras_popup'); // hidden as default
-everydayExtras_click = document.getElementById('everyday_extras');
+everydayExtras_click = document.getElementById('everyday_Extras');
 closeButton = document.getElementById('close_button5');
 
 everydayExtras_click.addEventListener('click',() =>{
@@ -79,7 +92,7 @@ closeButton.addEventListener('click',() =>{
 })
 
 execMenuA_display = document.getElementById('exec_menuA_popup'); // hidden as default
-execMenuA_click = document.getElementById('exec_menuA');
+execMenuA_click = document.getElementById('exec_MenuA');
 closeButton = document.getElementById('close_button6');
 
 execMenuA_click.addEventListener('click',() =>{
@@ -92,7 +105,7 @@ closeButton.addEventListener('click',() =>{
 })
 
 execMenuB_display = document.getElementById('exec_menuB_popup'); // hidden as default
-execMenuB_click = document.getElementById('exec_menuB');
+execMenuB_click = document.getElementById('exec_MenuB');
 closeButton = document.getElementById('close_button7');
 
 execMenuB_click.addEventListener('click',() =>{
@@ -105,7 +118,7 @@ closeButton.addEventListener('click',() =>{
 })
 
 execMenuC_display = document.getElementById('exec_menuC_popup'); // hidden as default
-execMenuC_click = document.getElementById('exec_menuC');
+execMenuC_click = document.getElementById('exec_MenuC');
 closeButton = document.getElementById('close_button8');
 
 execMenuC_click.addEventListener('click',() =>{
