@@ -60,6 +60,9 @@ button{
     .menu_img img{
         border: solid 3px#f89f0f;
     }
+    .menu-header{
+        font-size: 1.5em;
+    }
 
 }
 /* Ensure menu display is hidden until click event triggered */
