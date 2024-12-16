@@ -1,5 +1,9 @@
 Disallow:/confirmation.html/
 
+Disallow:/terms_and_conditions.html/
+
+Disallow:/privacypolicy.html/
+
 Allow:/index.html/
 
 Allow:/contact.html/

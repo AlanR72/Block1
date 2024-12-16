@@ -89,17 +89,20 @@ h2{
     margin-top: 5%;
     padding-bottom: 10%;
 }
-h3{
+.address{
     margin-top: 5%;
     margin-left: 50%;
 }
 iframe{
     margin-top:9%;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 .delivery-message{
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10%;
+}
+.address h3{
+    padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 991px){
