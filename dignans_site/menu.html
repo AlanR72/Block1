@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Keyword and description meta tags to improve search engine optimisation-->
     <meta name="keywords" content="Dignans Catering, office catering, executive menus, café catering, party menus, corporate catering, event catering, Edinburgh catering, business catering, local café, catering services, fresh catering, office lunch catering">
     <meta name ="description" content="Discover Dignans Catering, Edinburgh's premier catering service for local businesses. Offering delicious, fresh, and customizable catering options to meet your needs. Perfect for corporate events, meetings, and daily café services. Make a booking today!">
+    <!--Descriptive title tag-->
     <title>Home of Delicious Food in Edinburgh - Dignans Catering Menu Page</title>
+    <!-- Link to main stylesheet -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- Link to 'menu page stylesheet' -->
     <link rel="stylesheet" href="/css/menu.css">
+    <!--Link to google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!--Start of navigation as on index page-->
     <nav>
         <div class="nav-container">
             <div class="dignans-logo">
@@ -117,10 +123,12 @@
             <div class="close_button" id="close_button0">&times;</div>
             <h1>Febuary Special Offers</h1>
             <p>This February, enjoy an irresistible special offer on burgers that will satisfy your cravings without breaking the bank! For a limited time, get a delicious, freshly made burger with all the fixings at an unbeatable price. Whether you prefer a classic cheeseburger, a juicy bacon burger, or a veggie-packed option, this offer has something for everyone. Plus, with every purchase, you’ll receive a free side of crispy fries and a refreshing drink to complete your meal. Don’t miss out—this February, treat yourself to a mouthwatering burger deal while it lasts!</p>
+            <div class="burger_price">
             <h4>Burgers</h4>
-            <h5>Classic Burger: £2.50</h5>
+            <h5>Dignans Classic Burger: £2.50</h5>
             <h5>Juicy Cheeseburger: £2.50</h5>
             <h5>Very Special Veggie: £2.30</h5>
+            </div>
             <div class="menu_img"><img src="/media/SpecialOffer/burger1.jpg"><img src="/media/SpecialOffer/burger2.jpg"><img src="/media/SpecialOffer/burger3.jpg"><img src="/media/SpecialOffer/burger4.jpg"></div>
             <button class="print_button" onclick="enhancedPrint()" id="">Print Special Offers</button>
             <a class="download_anchor" href="/media/dignans_menu.pdf" download="">Download Full Dignans Menu.pdf</a>
@@ -369,13 +377,18 @@
     </main>
     
 </body>
+<!--Link to javascript file for toggle of mobile and desktop views-->
 <script src="js/main.js"></script>
+<!--Link to javascript file controlling menu page functionality-->
 <script src="js/menu.js"></script>
+<!--Start of footer section-->
 <footer>
+    <!--Wrapper for footer divs to display flex-->
     <div class="footer-container">
         <div class="footer-logo">
             <a href="/"><img src='/media/dignanlogo1.png'></a>
         </div>
+        <!--Unordered list to display contact options-->
         <div class="contact-details">
             <ul>
                 <li><a href="tel:+441412237840"><i class="fa-solid fa-phone"><span>    01412237840</span></i></a></li>
@@ -384,6 +397,7 @@
                 <li><a href="sms:+447776431307"><i class="fa-solid fa-mobile-screen"></i><span>    Send text message</span></a></li>
             </ul>
         </div>
+        <!--Unordered list to return to homepage and display sitemap, t&c's and privacy-->
         <div class="footer-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -392,6 +406,7 @@
                 <li><a href="sitemap.xml">Sitemap</a></li>
             </ul>
         </div>
+        <!--Links to social media-->
         <div class="social-media-icons">
             <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -399,5 +414,6 @@
         </div>
     </div>
 </footer>
+<!--Copyright display at bottom of page-->
 <div class="copyright-bottom">&copy; 2024 Dignans Catering</div>
 </html>

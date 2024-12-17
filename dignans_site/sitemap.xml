@@ -1,3 +1,6 @@
+<!-- Sitemap listing maintenance intervals -->
+<!-- Priority values high for important pages like menu page and blog page which changes regularly -->
+
 <?xml version="1.0" encoding="UTF-8"?> <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>

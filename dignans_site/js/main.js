@@ -97,7 +97,7 @@ function saveDataLocally(name, email, telno, message){
     localStorage.setItem('formData', JSON.stringify(formData));
 }
 
-/////Returning data from local storage to confirmation page////////////////////
+//Returning data from local storage to confirmation page
 
 //Retreive data from local storage
 var storedData = localStorage.getItem('formData');

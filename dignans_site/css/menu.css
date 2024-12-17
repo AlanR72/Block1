@@ -79,20 +79,31 @@ button{
     left: 5%;
     flex-direction: column;
     overflow: scroll;
+    color: #333126;
+    
 }
 .show h1,h3{
     padding: 30px;
+    margin-left: 2%;
 }
-
-.show ul, p, h5, h4{
-    margin-left: 50px;
-    margin-right: 50px;
+.burger_price{
+    margin-left: 7%;
+}
+.show ul{
+    margin-left: 12%;
+    margin-right: 3%;
+}
+.show h5, h4{
+    margin-left: 3%;
+    margin-right: 3%;
     }
 .show p{
     text-align: justify;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 .show h5, h4{
-    margin-left: 50px;
+    margin-left: 3%;
     margin-top: 3%;;
 }
 .menu_img{
