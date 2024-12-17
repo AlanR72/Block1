@@ -160,10 +160,14 @@ button{
     *{
         color: #000
     }
+    h1{
+        color: #000;
+    }
     .print-only{
         display: block;
     }
-    .close_button{
+    .close_button, .print_button, .download_anchor{
         display: none;
     }
+    
 }

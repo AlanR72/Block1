@@ -156,8 +156,9 @@ closeButton.addEventListener('click',() =>{
 
 })
 
-// click on a section
-// popup appears
+function enhancedPrint(){
+    window.print();
+}
 
 
 
