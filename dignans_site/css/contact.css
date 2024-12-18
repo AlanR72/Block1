@@ -4,7 +4,9 @@ main{
     background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 h1,h2,h3{
     font-family: "Anton", sans-serif;
@@ -13,12 +15,11 @@ h1,h2,h3{
 }
 .form-wrapper{
     display: flex;
-    justify-content: center;
     background-color: #F89F0F;
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-    margin-top: 400px;
+    margin-top: 400px;;
     width: 85%;
 }
 .form-header{
@@ -61,17 +62,20 @@ span{
     padding: 3%;
 }
 
+
 @media only screen and (min-width: 991px){
     main{
         background-position: top;
-        justify-content: left;
+        align-items: flex-start;
     }
     .form-wrapper{
+       
         width: 35%;
         height: 80%;
         margin-left: 7%;
         margin-top: 5%;
     }
+    
 }
 @media only screen and (min-width: 1080px){
     .content{
