@@ -26,24 +26,34 @@
             <div class="dignans-logo">
                 <a id="logo" href="/"><img src="/media/dignanlogo1.png" alt="Dignans Logo"></a>
             </div>
+            <!-- Navigation displays row for large devices toggled to column using css and js -->
             <ul id="mobile-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cafe.html">Cafe</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
+                <!-- Style for navigation bar to show 'current' page selection in orange -->
                 <li><a href="contact.html" class="current">Contact Us</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>
+        <!-- Hamburger menu which is hidden for larger devices -->
         <div id="mobile-click" class="hamburger">&#8801</div>
     </nav>
     <main>
-        
+        <!-- Main contact form of site retreiving customer details and message -->
+        <!-- User info sent to company owner's email account via emailjs -->
+        <!-- Customer advised not secure method of data capture -->
+
+        <!-- Form validation executed upon submission by javascript file 'form_data.js' -->
         <form action="" id="contact-form" class="form-wrapper" onsubmit= "return validateForm()">
         
             <h1 class="form-header">CONTACT DIGNANS</h1>
+            <!-- Label for input box -->
             <label for="name" class="form-label">Name:</label>
+            <!-- Input box for user entry -->
             <input type="text" id="name" placeholder="Enter your full name.">
+            <!-- Span used to display error if incorrect data entered -->
             <span id="nameError" class="error"></span>
             <label for="email" class="form-label">Email:</label>
             <input type="text" id="email" placeholder="Enter your email address.">
@@ -54,7 +64,9 @@
             <label for="message" class="form-textbox">Message:</label>
             <textarea name ="textbox" id="message" cols="30" rows="5" placeholder="Enquiry or feedback."></textarea>
             <span id="messageError" class="error"></span>
+            <!-- Status message to display result of submit button(successful/unsuccessful) -->
             <p class="status-message" id="status-message"></p>
+            <!-- Submit button -->
             <button type="submit" class="button">Submit</button>
         
         </form>

@@ -25,29 +25,36 @@
             <div class="dignans-logo">
                 <a id="logo" href="/"><img src="/media/dignanlogo1.png" alt="Dignans Logo"></a>
             </div>
+            <!-- Navigation displays row for large devices toggled to column using css and js -->
             <ul id="mobile-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cafe.html">Cafe</a></li>
+                <!-- Style for navigation bar to show 'current' page selection in orange -->
                 <li><a href="menu.html" class="current">Menu</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>
+        <!-- Hamburger menu which is hidden for larger devices -->
         <div id="mobile-click" class="hamburger">&#8801</div>
     </nav>
     <main>
+        <!-- Info on navigating menu items -->
         <div class="menu-header">
             <h3>Welcome to Dignans Menu Page</h3>
             <p>Click on an item below for detailed a description.</p>
             <p>(Don't forget to check out this month's Special Offers)</p>
         </div>
+        <!-- Div containing 12 divs for each category of site menu -->
+        <!-- Upon click of each below div a hidden div pops up using css and javascript pages 'menu.js and menu.css' displaying additional menu information -->
         <div class="menu-wrapper">
-
+            <!-- Special Offer div -->
             <div class="selection" id="special_offer">
                 <div class="img-container">
                 <img src="/media/SpecialOffer/specialofferpic.jpg" alt="delicious burgers">
                 </div>
+                <!-- Special Offer button (Image and button trigger menu.js code to diplay hidden menu) -->
                 <button>FEBUARY OFFERS</button>
             </div>
             <div class="selection" id="partyA">
@@ -118,21 +125,30 @@
             </div>
             
         </div>
+        <!-- Start of hidden divs containing info for each individual menu -->
+         <!-- div given class to control print output styles via css page 'menu.css' -->
         <div class="print-only">
+            <!-- Special Offer hidden menu -->
             <div class="menu-model hidden" id="special_offer_popup">
+            <!-- Close button to allow user to close current menu display -->
             <div class="close_button" id="close_button0">&times;</div>
             <h1>Febuary Special Offers</h1>
             <p>This February, enjoy an irresistible special offer on burgers that will satisfy your cravings without breaking the bank! For a limited time, get a delicious, freshly made burger with all the fixings at an unbeatable price. Whether you prefer a classic cheeseburger, a juicy bacon burger, or a veggie-packed option, this offer has something for everyone. Plus, with every purchase, you’ll receive a free side of crispy fries and a refreshing drink to complete your meal. Don’t miss out—this February, treat yourself to a mouthwatering burger deal while it lasts!</p>
+            <!-- Div to control small special offer pricelist -->
             <div class="burger_price">
             <h4>Burgers</h4>
             <h5>Dignans Classic Burger: £2.50</h5>
             <h5>Juicy Cheeseburger: £2.50</h5>
             <h5>Very Special Veggie: £2.30</h5>
             </div>
+            <!-- Each hidden menu has 4 images -->
             <div class="menu_img"><img src="/media/SpecialOffer/burger1.jpg"><img src="/media/SpecialOffer/burger2.jpg"><img src="/media/SpecialOffer/burger3.jpg"><img src="/media/SpecialOffer/burger4.jpg"></div>
+            <!-- Print option for menu -->
             <button class="print_button" onclick="enhancedPrint()" id="">Print Special Offers</button>
+            <!-- Download option for full menu -->
             <a class="download_anchor" href="/media/dignans_menu.pdf" download="">Download Full Dignans Menu.pdf</a>
             </div>
+            <!-- PartyA hidden menu -->
             <div class="menu-model hidden" id="partyA_popup">
                 <div class="close_button" id="close_button">&times;</div>
                 <h1>Party A Menu</h1>
@@ -150,6 +166,7 @@
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Party Menu A</button>
                 <a class="download_anchor" href="/media/dignans_menu.pdf" download="">Download Full Dignans Menu.pdf</a>
             </div>
+            <!-- PartyB hidden menu -->
             <div class="menu-model hidden" id="partyB_popup">
                 <div class="close_button" id="close_button1">&times;</div>
                 <h1>Party B Menu</h1>
@@ -168,6 +185,7 @@
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Party Menu B</button>
                 <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
+            <!-- Lunch Menu hidden menu -->
             <div class="menu-model hidden" id="lunchMenu_popup">
                 <div class="close_button" id="close_button2">&times;</div>
                 <h1>Lunch Menus</h1>
@@ -207,6 +225,7 @@
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Lunch Menu</button>
                 <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
+            <!-- Dressing hidden menu -->
             <div class="menu-model hidden" id="dressing_popup">
                 <div class="close_button" id="close_button3">&times;</div>
                 <h1>Dressing</h1>
@@ -228,6 +247,7 @@
                 <button class="print_button" id="">Print Dressing Menu</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
+            <!-- Office Catering hidden menu -->
             <div class="menu-model hidden" id="officeCatering_popup">
                 <div class="close_button" id="close_button4">&times;</div>
                 <h1>Office Catering</h1>
@@ -247,6 +267,7 @@
                 <button class="print_button" id="">Print Office Catering Menu</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
+            <!-- Everyday Extras hidden menu -->
             <div class="menu-model hidden" id="everyday_extras_popup">
                 <div class="close_button" id="close_button5">&times;</div>
                 <h1>Everyday Extras</h1>
@@ -272,6 +293,7 @@
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Everyday Extras Menu</button>
                 <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
+            <!-- Hidden Exexutive menu A -->
             <div class="menu-model hidden" id="exec_menuA_popup">
                 <div class="close_button" id="close_button6">&times;</div>
                 <h1>Executive Menu A</h1>
@@ -289,6 +311,7 @@
                 <button class="print_button" id="">Print Executive Menu A</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
+            <!-- Hidden Exexutive menu B -->
             <div class="menu-model hidden" id="exec_menuB_popup">
                 <div class="close_button" id="close_button7">&times;</div>
                 <h1>Executive Menu B</h1>
@@ -307,6 +330,7 @@
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Executive Menu B</button>
                 <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
+            <!-- Hidden Exexutive menu C -->
             <div class="menu-model hidden" id="exec_menuC_popup">
                 <div class="close_button" id="close_button8">&times;</div>
                 <h1>Executive Menu C</h1>
@@ -327,6 +351,7 @@
                 <button class="print_button" id="">Print Executive Menu C</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
+            <!-- Breakfast hidden menu -->
             <div class="menu-model hidden" id="breakfast_popup">
                 <div class="close_button" id="close_button9">&times;</div>
                 <h1>Breakfast</h1>
@@ -350,6 +375,7 @@
                 <button class="print_button" id="">Print Breakfast Menu</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
+            <!-- Barbeque hidden menu -->
             <div class="menu-model hidden" id="bbq_popup">
                 <div class="close_button" id="close_button10">&times;</div>
                 <h1>Office Barbecue</h1>

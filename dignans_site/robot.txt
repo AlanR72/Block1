@@ -1,4 +1,4 @@
-Pages which do not benefit from search engine listing are disallowed
+Pages which do not benefit from search engine listing are disallowed to improve site efficiency
 
 
 Disallow:/confirmation.html/
