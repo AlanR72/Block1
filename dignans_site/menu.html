@@ -43,11 +43,12 @@
         <!-- Info on navigating menu items -->
         <div class="menu-header">
             <h3>Welcome to Dignans Menu Page</h3>
-            <p>Click on an item below for detailed a description.</p>
+            <p>Click on an item below for a detailed description.</p>
             <p>(Don't forget to check out this month's Special Offers)</p>
         </div>
+
         <!-- Div containing 12 divs for each category of site menu -->
-        <!-- Upon click of each below div a hidden div pops up using css and javascript pages 'menu.js and menu.css' displaying additional menu information -->
+        <!-- Upon click of each below div a hidden menu pops up using css and javascript pages 'menu.js and menu.css' to style, featuring additional, printable menu information -->
         <div class="menu-wrapper">
             <!-- Special Offer div -->
             <div class="selection" id="special_offer">
@@ -57,66 +58,77 @@
                 <!-- Special Offer button (Image and button trigger menu.js code to diplay hidden menu) -->
                 <button>FEBUARY OFFERS</button>
             </div>
+            <!-- PartyA div -->
             <div class="selection" id="partyA">
                 <div class="img-container">
                 <img src="/media/PartyA-Images/vol-au-vents1.jpg" alt="plate of vol-au-vonts">
                 </div>
                 <button>PARTY MENU A</button>
             </div>
+            <!-- PartyB div -->
             <div class="selection" id="partyB">
                 <div class="img-container">
                 <img src="/media/PartyB-Images/cocktailsandwich3.jpg" alt="image of a delicious sandwich">
                 </div>
                 <button class="clicker">PARTY MENU B</button>
             </div>
+            <!-- Lunch Menu div -->
             <div class="selection" id="lunch_Menu">
                 <div class="img-container" >
                 <img src="/media/Lunch-Images/rolls1.jpg" alt="image of a filled baguette">
                 </div>
                 <button>LUNCH MENU</button>
             </div>
+            <!-- Dressing div -->
             <div class="selection" id="dressing">
                 <div class="img-container">
                 <img src="/media/Dressing-Images/quiche1.jpg" alt="Quiche on a plate">
                 </div>
                 <button>DRESSING</button>
             </div>
+            <!-- Office Catering div -->
             <div class="selection" id="office_Catering">
                 <div class="img-container">
                 <img src="/media/OfficeCatering-Images/bagels1.jpg" alt="Various delicious bagels">
                 </div>
                 <button>OFFICE CATERING</button>
             </div>
+            <!-- Everyday Extras div -->
             <div class="selection"id="everyday_Extras">
                 <div class="img-container">
                 <img src="/media/EverydayExtras-Images/seafood1.jpg" alt="plate of seafood">
                 </div>
                 <button>EVERYDAY EXTRAS</button>
             </div>
+            <!-- Executive Menu A div -->
             <div class="selection" id="exec_MenuA">
                 <div class="img-container">
                 <img src="/media/ExecMenuA/ham1.jpg" alt="joint of honey glazed ham">
                 </div>
                 <button>EXECUTIVE MENU A</button>
             </div>
+            <!-- Executive Menu B div -->
             <div class="selection" id="exec_MenuB">
                 <div class="img-container">
                 <img src="/media/ExecMenuB/roastbeef1.jpg" alt="plate of roast beef">
                 </div>
                 <button>EXECUTIVE MENU B</button>
             </div>
+            <!-- Executive Menu C div -->
             <div class="selection" id="exec_MenuC">
                 <div class="img-container">
                 <img src="/media/ExecMenuC/pennepasta1.jpg" alt="plate of pasta">
                 </div>
                 <button>EXECUTIVE MENU C</button>
             </div>
+            <!-- Breakfast div -->
             <div class="selection" id="breakfast">
                 <div class="img-container">
                 <img src="/media/Breakfast-Images/breakfast1.jpg" alt="fried breakfast">
                 </div>
                 <button>BREAKFAST</button>
             </div>
+            <!-- Barbeque div -->
             <div class="selection" id="bbq">
                 <div class="img-container">
                 <img src="/media/OfficeBarb-Images/skewers1.jpg" alt="Skewers on a barbecue">
@@ -126,7 +138,8 @@
             
         </div>
         <!-- Start of hidden divs containing info for each individual menu -->
-         <!-- div given class to control print output styles via css page 'menu.css' -->
+        <!-- each div given classes to control print output styles via css page 'menu.css' -->
+        <!-- Each hidden menu contains a print button and download option -->
         <div class="print-only">
             <!-- Special Offer hidden menu -->
             <div class="menu-model hidden" id="special_offer_popup">
@@ -142,7 +155,7 @@
             <h5>Very Special Veggie: £2.30</h5>
             </div>
             <!-- Each hidden menu has 4 images -->
-            <div class="menu_img"><img src="/media/SpecialOffer/burger1.jpg"><img src="/media/SpecialOffer/burger2.jpg"><img src="/media/SpecialOffer/burger3.jpg"><img src="/media/SpecialOffer/burger4.jpg"></div>
+            <div class="menu_img"><img src="/media/SpecialOffer/burger1.jpg" alt="Image of a cheeseburger"><img src="/media/SpecialOffer/burger2.jpg" alt="Image of a chickenburger"><img src="/media/SpecialOffer/burger3.jpg" alt="Image of a burger with salad"><img src="/media/SpecialOffer/burger4.jpg" alt="Image of a burger, onion rings and chips"></div>
             <!-- Print option for menu -->
             <button class="print_button" onclick="enhancedPrint()" id="">Print Special Offers</button>
             <!-- Download option for full menu -->
@@ -162,7 +175,7 @@
                     <li>All disposables supplied free of charge.</li>
                 </ul>
                 <p>If you wish to discuss any of the above menus please contact us.</p>
-                <div class="menu_img"><img src="/media/PartyA-Images/chickensataysticks1.jpg"><img src="/media/PartyA-Images/cocktailsandwich1.jpg"><img src="/media/PartyA-Images/indianfood1.jpg"><img src="/media/PartyA-Images/sausage1.jpg"></div>
+                <div class="menu_img"><img src="/media/PartyA-Images/chickensataysticks1.jpg" alt="Chicken satay sticks"><img src="/media/PartyA-Images/cocktailsandwich1.jpg" alt="Image of a cocktail sandwich"><img src="/media/PartyA-Images/indianfood1.jpg" alt="Indian food on a palm leaf"><img src="/media/PartyA-Images/sausage1.jpg" alt="Sausages on a grill"></div>
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Party Menu A</button>
                 <a class="download_anchor" href="/media/dignans_menu.pdf" download="">Download Full Dignans Menu.pdf</a>
             </div>
@@ -181,7 +194,7 @@
                     <li>All disposables supplied free of charge.</li>
                 </ul>
                 <p>If you wish to discuss any of the above menus please contact us.</p>
-                <div class="menu_img"><img src="/media/PartyB-Images/minirolls1.jpg"><img src="/media/PartyB-Images/skewers1.jpg"><img src="/media/PartyB-Images/savoryeggs1.jpg"><img src="/media/PartyB-Images/quiche1.jpg"></div>
+                <div class="menu_img"><img src="/media/PartyB-Images/minirolls1.jpg" alt="Image of vegetable mini rolls"><img src="/media/PartyB-Images/skewers1.jpg" alt="Image of chicken skewers"><img src="/media/PartyB-Images/savoryeggs1.jpg" alt="Image of a soft, runny savory egg"><img src="/media/PartyB-Images/quiche1.jpg" alt="Quiche on a plate"></div>
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Party Menu B</button>
                 <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
@@ -221,7 +234,7 @@
                     <li>Traditional greek salad, (optional chargrilled chicken).</li>
                     <li>Baby beetroot, buffalo mozzarella, grated carrot, sliced shallots, and a low fat mint yoghurt</li>
                 </ul>
-                <div class="menu_img"><img src="/media/Lunch-Images/ploughmans1.jpg"><img src="/media/Lunch-Images/baguette1.jpg"><img src="/media/Lunch-Images/saladbox1.jpg"><img src="/media/Lunch-Images/stovie1.jpg"></div>
+                <div class="menu_img"><img src="/media/Lunch-Images/ploughmans1.jpg" alt="Ploughmans cheese board"><img src="/media/Lunch-Images/baguette1.jpg" alt="Ham baguette"><img src="/media/Lunch-Images/saladbox1.jpg" alt="Salad boxes"><img src="/media/Lunch-Images/stovie1.jpg" alt="Corned beef stovies"></div>
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Lunch Menu</button>
                 <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
@@ -243,7 +256,7 @@
                     <li>Fruit smoothie £1.30</li>
                     <li>Bottle fresh orange £0.80</li>
                 </ul>
-                <div class="menu_img"><img src="/media/Dressing-Images/fruits1.jpg"><img src="/media/Dressing-Images/melon1.jpg"><img src="/media/Dressing-Images/smoothies1.jpg"><img src="/media/Dressing-Images/traybake1.jpg"></div>
+                <div class="menu_img"><img src="/media/Dressing-Images/fruits1.jpg" alt="Various fruits"><img src="/media/Dressing-Images/melon1.jpg" alt="Image of watermelon slices"><img src="/media/Dressing-Images/smoothies1.jpg" alt="Smoothie and fruit"><img src="/media/Dressing-Images/traybake1.jpg" alt="Chocolate topped traybake"></div>
                 <button class="print_button" id="">Print Dressing Menu</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
@@ -263,7 +276,7 @@
                 </ul>
                 <p>All disposables provided (plates, napkins, glasses, cutlery)</p>
                 <p>Free mineral water provided for parties of 10 or more.</p>
-                <div class="menu_img"><img src="/media/OfficeCatering-Images/creamcakes1.jpg"><img src="/media/OfficeCatering-Images/croissants1.jpg"><img src="/media/OfficeCatering-Images/fruit-platter1.jpg"><img src="/media/OfficeCatering-Images/wraps1.jpg"></div>
+                <div class="menu_img"><img src="/media/OfficeCatering-Images/creamcakes1.jpg" alt="Iced doughnuts"><img src="/media/OfficeCatering-Images/croissants1.jpg" alt="Image of croissants"><img src="/media/OfficeCatering-Images/fruit-platter1.jpg" alt="Bowl of fruit"><img src="/media/OfficeCatering-Images/wraps1.jpg" alt="Image of wraps with salad and chicken"></div>
                 <button class="print_button" id="">Print Office Catering Menu</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
@@ -288,8 +301,9 @@
                     <li>Mini chicken, pineapple and pepper skewers. </li>
                 </ul><br>
                 <p>This is only a sample of what we can provide.</p>
-                <p>Feel free to ask for advice. Both hot and cold dishes available to suit your facilities.</p>
-                <div class="menu_img"><img src="/media/EverydayExtras-Images/breadedprawns1.jpg"><img src="/media/EverydayExtras-Images/creamypepper1.jpg"><img src="/media/EverydayExtras-Images/croustades1.jpg"><img src="/media/EverydayExtras-Images/tartlets1.jpg"></div>
+                <p>Feel free to ask for advice.</p>
+                <p>Both hot and cold dishes available to suit your facilities.</p>
+                <div class="menu_img"><img src="/media/EverydayExtras-Images/breadedprawns1.jpg" alt="Breaded prawns elaborately placed on a plate"><img src="/media/EverydayExtras-Images/creamypepper1.jpg" alt="Creamy pepper soup"><img src="/media/EverydayExtras-Images/croustades1.jpg" alt="Creamy prawn and salad filled croustades"><img src="/media/EverydayExtras-Images/tartlets1.jpg" alt="Goats cheese with crispy bread"></div>
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Everyday Extras Menu</button>
                 <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
@@ -307,7 +321,7 @@
                     <li>Profiterolles with chocolate sauce</li>
                     <li>Petit pans</li>
                 </ul>
-                <div class="menu_img"><img src="/media/ExecMenuA/game pie1.jpg"><img src="/media/ExecMenuA/petitpans1.jpg"><img src="/media/ExecMenuA/profiteroles1.jpg"><img src="/media/ExecMenuA/redonionsalad1.jpg"></div>
+                <div class="menu_img"><img src="/media/ExecMenuA/game pie1.jpg" alt="Game pie"><img src="/media/ExecMenuA/petitpans1.jpg" alt="Cinnamon swirl"><img src="/media/ExecMenuA/profiteroles1.jpg" alt="Plate of profiteroles"><img src="/media/ExecMenuA/redonionsalad1.jpg" alt="Red onion salad"></div>
                 <button class="print_button" id="">Print Executive Menu A</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
@@ -326,7 +340,7 @@
                     <li>Fresh raspberry and marscapone cheesecake.</li>
                     <li>Petit pans</li>
                 </ul>
-                <div class="menu_img"><img src="/media/ExecMenuB/poached salmon.jpg"><img src="/media/ExecMenuB/cheesecake.jpg"><img src="/media/ExecMenuB/chicken and avacado.jpg"><img src="/media/ExecMenuB/couscous.jpg"></div>
+                <div class="menu_img"><img src="/media/ExecMenuB/poached salmon.jpg" alt="Plates of cooked fish dishes"><img src="/media/ExecMenuB/cheesecake.jpg" alt="Raspberry cheesecake"><img src="/media/ExecMenuB/chicken and avacado.jpg" alt="Chicken and avacado with pitta bread in a basket"><img src="/media/ExecMenuB/couscous.jpg" alt="Cous cous in a hollowed out cucumber"></div>
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Executive Menu B</button>
                 <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
@@ -347,7 +361,7 @@
                     <li>Brandy basket filled strawberry craiche with fruit coulis topping</li>
                     <li>Petit pans</li>
                 </ul>
-                <div class="menu_img"><img src="media/ExecMenuC/brandybasket1.jpg"><img src="media/ExecMenuC/greeksalad1.jpg"><img src="media/ExecMenuC/porkloin1.jpg"><img src="media/ExecMenuC/vegtartlet1.jpg"></div>
+                <div class="menu_img"><img src="media/ExecMenuC/brandybasket1.jpg" alt="Fruit and cream in a brandy basket"><img src="media/ExecMenuC/greeksalad1.jpg" alt="Plate of greek salad"><img src="media/ExecMenuC/porkloin1.jpg" alt="Roast pork loin"><img src="media/ExecMenuC/vegtartlet1.jpg" alt="Vegetable tartlet"></div>
                 <button class="print_button" id="">Print Executive Menu C</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
@@ -371,7 +385,7 @@
                     <li>Tea and coffee</li>
                 </ul><br>
                 <p>All equipment provided.</p>
-                <div class="menu_img"><img src="/media/Breakfast-Images/baconroll1.jpg"><img src="/media/Breakfast-Images/continental1.jpg"><img src="/media/Breakfast-Images/danish1.jpg"><img src="/media/Breakfast-Images/scone1.jpg"></div>
+                <div class="menu_img"><img src="/media/Breakfast-Images/baconroll1.jpg" alt="Breakfast rolls with bacon, scrambled eggs and avacado"><img src="/media/Breakfast-Images/continental1.jpg" alt="Continental breakfast"><img src="/media/Breakfast-Images/danish1.jpg" alt="Danish pastry on a plate"><img src="/media/Breakfast-Images/scone1.jpg" alt="Scone with jam and cream"></div>
                 <button class="print_button" id="">Print Breakfast Menu</button>
                 <button class="download_anchor" onclick="enhancedPrint()" id="">Download Full Dignans Menu.pdf</button>
             </div>
@@ -395,7 +409,7 @@
                     <li>Fresh fruit salad</li>
                 </ul>
                 <p>All disposables supplied. Drinks can be supplied on order £9.50 per person</p>
-                <div class="menu_img"><img src="/media/OfficeBarb-Images/pitta1.jpg"><img src="/media/OfficeBarb-Images/bratfurst1.jpg"><img src="/media/OfficeBarb-Images/potatosalad1.jpg"><img src="/media/OfficeBarb-Images/steaksandwich1.jpg"></div>
+                <div class="menu_img"><img src="/media/OfficeBarb-Images/pitta1.jpg" alt="Chicken and salad wrapped in pitta bread"><img src="/media/OfficeBarb-Images/bratfurst1.jpg" alt="Bratfurst sausages on a plate with barbeque sauce"><img src="/media/OfficeBarb-Images/potatosalad1.jpg" alt="Plate of potato salad"><img src="/media/OfficeBarb-Images/steaksandwich1.jpg" alt="Delicious steak and cheese toastie"></div>
                 <button class="print_button" onclick="enhancedPrint()" id="">Print Office Barbecue Menu</button>
                 <button class="download_anchor" id="">Download Full Dignans Menu.pdf</button>
             </div>
