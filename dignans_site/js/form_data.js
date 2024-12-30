@@ -101,7 +101,7 @@ function saveDataLocally(name, email, telno, message){
     localStorage.setItem('formData', JSON.stringify(formData));
     console.log("Data saved locally:",formData);//Debugging log to confirm data is saved
 }
-//Display stored data on confirmation page
+
 
 
 
