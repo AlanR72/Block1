@@ -1,12 +1,13 @@
 /* Additional styling for confirmation page */
 
+/* Main styling to display centered content */
 main{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #F89F0F;
 }
-
+/* Styling for div displaying stored information */
 .wrapper{
     border: solid #333126 3px;
     width: 75%;
@@ -21,6 +22,7 @@ h1{
     color: #333126;
     margin-bottom: 4%;
 }
+/* Additional styling for heading */
 h3{
     padding-bottom: 5%;
     font-family: "Anton", sans-serif;
@@ -31,6 +33,8 @@ p{
     padding: 5%;
     text-align: center;
 }
+
+/* Styling for larger devices */
 @media only screen and (min-width: 991px){
     body{
         font-size: 1.5em;

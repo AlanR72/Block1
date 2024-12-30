@@ -1,5 +1,6 @@
 /* Additional styling for menu page */
 
+/* Styling for body contents of page */
 body{
     box-sizing: border-box;
     margin: 0;
@@ -8,10 +9,12 @@ body{
     color: #f89f0f;
     position: relative;
 }
+/* Top heading info styling */
 .menu-header{
     margin-top: 5%;
     text-align: center;
 }
+/* Container div for all clickable boxes on main page */
 .menu-wrapper{
     display: flex;
     flex-direction: row;
@@ -19,6 +22,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
+/* Container div for 'contents of each' clickable box on main page */
 .selection{
     display: flex;
     flex-direction: column;
@@ -28,6 +32,7 @@ body{
     width: 25%;
     cursor: pointer;
 }
+/* Color change to distinguish hover over button */
 .selection:hover button{
     background-color: #333126;
     color: #f89f0f;
@@ -39,6 +44,11 @@ body{
 div img{
     width: 100%;
 }
+/* Styling to override div img styling for other images on page */
+.footer-logo{
+    width: 40%;
+}
+/* Styling for print buttons */
 button{
     background-color: #f89f0f;
     color: #333126;
@@ -51,6 +61,7 @@ button{
     cursor: pointer;
 }
 
+/* Styling for larger devices */
 @media screen and (min-width: 991px){
     button{
         font-size: 1rem;
@@ -71,6 +82,7 @@ button{
 .hidden{
     display: none;
 }
+/* Styling for menu info displayed upon click event */
 .show{
     display: flex;
     position: absolute;
@@ -84,31 +96,31 @@ button{
     color: #333126;
     
 }
+/* Styling for main headings on 'hidden' menus */
 .show h1,h3{
     padding: 30px;
     margin-left: 2%;
 }
-.burger_price{
-    margin-left: 7%;
-}
+/* Styling for lists on 'hidden' menu pages */
 .show ul{
     margin-left: 12%;
     margin-right: 3%;
 }
+/* Styling for secondary headings on 'hidden' menu displays */
 .show h5, h4{
     margin-left: 3%;
     margin-right: 3%;
-    }
+    margin-top: 3%;
+}
+/* Styling for paragraphs on 'hidden' menus */
 .show p{
     text-align: justify;
     margin-left: 10%;
     margin-right: 5%;
     padding-top: 2%;
 }
-.show h5, h4{
-    margin-left: 3%;
-    margin-top: 3%;;
-}
+
+/* Styling container for images */
 .menu_img{
     display: flex;
     width: 75%;
@@ -116,11 +128,13 @@ button{
     margin-left: 6%;
     padding-top: 2em;
 }
+/* Styling for images */
 .menu_img img{
     width: 25%;
     margin: 2%;
     border: solid 1px#f89f0f;
 }
+/* Styling for print button */
 .print_button{
     background-color: #333126;
     color: #f89f0f;
@@ -133,6 +147,7 @@ button{
     align-items: center;
     justify-content: center;
 }
+/* Styling for download click */
 .download_anchor{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f89f0f;
@@ -152,6 +167,7 @@ button{
     align-items: center;
     justify-content: center;
 }
+/* Styling for close button (top-right) */
 .close_button{
     display: flex;
     position: absolute;
@@ -160,7 +176,12 @@ button{
     padding: 2%;
     cursor: pointer;
 }
+/* Special offer page burger pricelist positioning */
+.burger_price{
+    margin-left: 7%;
+}
 
+/* Styling for print friendly content(black text, images removed) */
 @media print{
     nav, footer{
         display: none;

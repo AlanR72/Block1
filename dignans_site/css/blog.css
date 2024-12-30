@@ -1,6 +1,5 @@
 /* Additional styling for blog page */
 
-
 main{
     display: flex;
     flex-wrap: wrap;
@@ -10,21 +9,23 @@ main{
     background-color: #f89f0f;
     width:100%;
     font-size: 1.3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
+/* Styling for top div */
 .blog-welcome{
     width: 90%;
     color: #333126;
     margin-top: 5%;
     border: #333126 solid 2px;
 }
-
+/* Top div image styling */
 .blog-img img{
     border: #333126 solid 2px;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
 }
+/* Special offer blog styling */
 .blog-special-offer{
     display: flex;
     flex-direction: column;
@@ -34,26 +35,30 @@ main{
     margin-top: 5%;
     border: #f89f0f solid 2px;;
 }
+/* Styling for burger prices */
 .blog-special-offer ul, h3{
     margin-left: 15%;
     padding: 1%;
 }
+/* Images to display in row with spacing between */
 .burger_img{
     display: flex;
     flex-direction: row;
     width: 60%;
     margin: 5%;
 }
-
+/* Image container targeting images to apply styling */
 .burger_img img{
     width: 30%;
     margin-left: 6%;
     margin-bottom: 5%;
     border: #f89f0f solid 2px;
 }
+/* Section containing 3 blogs */
 section{
     width: 100%;
 }
+/* Styling for first blog */
 .blog1{
     width: 90%;
     border: #f89f0f solid 3px;
@@ -62,22 +67,26 @@ section{
     margin-top: 5%;
     margin-left: 5%;
 }
+/* Allow image to move to left with text wrapping it */
 .blog1 img{
     float: left;
     margin: 5%;
     border: #f89f0f solid 3px;
 }
+/* Styling for second blog */
 .blog2{
     background-color: #f89f0f;
     width: 90%;
     margin-left: 5%;
     margin-top: 5%;
 }
+/*Allow image to move to right with text wrapping it  */
 .blog2 img{
     float: right;
     display: flex;
     padding: 5%;
 }
+/* Styling for third blog */
 .blog3{
     width: 90%;
     border: #f89f0f solid 3px;
@@ -90,9 +99,11 @@ section{
 .blog3 img{
     width:100%;
 }
+/* Allow space round image */
 .chef-image{
     padding: 5%;
 }
+/* Spacing around image and to fill container */
 .indian-cuisine-image{
     width: 100%;
     padding: 5%;
@@ -101,14 +112,13 @@ h2{
     padding: 3%;
     font-size: 1em;
 }
+/* Styling to make text more readable */
 p{
     padding: 3%;
     text-align: justify;
 }
-.blog3{
-    width: 90%;
-    border: #f89f0f solid 3px;
-}
+
+/* Styling for larger devices */
 @media only screen and (min-width: 991px){
     main{
         font-size: 1.5em;;

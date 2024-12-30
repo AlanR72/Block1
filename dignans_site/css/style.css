@@ -1,19 +1,28 @@
 /* Styling for navigation and footer on all pages */
 /* Styling for index page */
 
+/* CSS reset to remove default settings */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Root styling for text on all pages */
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     font-size: 1rem;
 }
+/* Styling for heading on index page */
 .header-title{
     font-size: 3em;
+    color:#F89F0F;
+    padding: 10px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+/* Styling for navigation container */
 nav{
     width: 100%;
     height: 15vh;
@@ -28,7 +37,8 @@ nav ul{
     flex-direction: column;
     display: none;/*display none made visible with media query*/
 }
-/* Navigation for mobile */
+
+/* Styling for mobile navigation */
 nav ul li{
     border-bottom: 3px solid #F89F0F;
     font-size: 1em;
@@ -39,6 +49,7 @@ nav ul li{
     text-align: center;
     width: 25%;
 }
+/* CSS targeting div images to fill container */
 div a img{
     height: 100%;
 }
@@ -74,10 +85,11 @@ a{
     color: #F89F0F;
     font-size: 2em;
 }
-
+/* Styling to contain navigation list height */
 #mobile-nav{
     height:100%;
 }
+/* Style for navigation hyperlinks */
 #mobile-nav a{
     height: 100%;
     display: flex;
@@ -91,20 +103,18 @@ nav a:hover, .current{
     color: #333126;
 }
 
-/* Small piece of code to prevent background showing on hover */
+/* Small piece of code to prevent background showing through on hover */
 .dignans-logo a:hover{
     background-color: #333126;
 }
-nav a:active-item{
-    background-color: #f89f0f;
-    color: #333126;
-}
+
+/* Styling for navigation container div */
 .nav-container{
     width: 100%;
     display: flex;
     
 }
-
+/* Style for footer container div */
 .footer-container{
     background-color: #333126;
     display: flex;
@@ -114,7 +124,7 @@ nav a:active-item{
     width: 100%;
     
 }
-
+/* Background image for index page */
 .header{
     background-image: url(../media/main3.jpg);
     display: flex;
@@ -125,24 +135,7 @@ nav a:active-item{
     align-items:flex-end;
 }
 
-h1{
-    color:#F89F0F;
-    padding: 10px;
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-.footer-logo{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 2%;
-    margin-top: 2%;
-}
+/* Styling for footer contact options */
 .contact-details{
     width: 50%;
     display: flex;
@@ -151,6 +144,7 @@ h1{
     text-align: center;
     font-size: 8px;
 }
+/* Styling for footer navigation */
 .footer-nav{
     width: 50%;
     display: flex;
@@ -159,6 +153,7 @@ h1{
     text-align: center;
     font-size: 8px;
 }
+/* Styling for social media icons */
 .social-media-icons{
     width: 50%;
     align-items: center;
@@ -168,10 +163,12 @@ h1{
     padding-bottom: 2%;
     padding-top: 2%;
 }
+/* Removes list styling and adds spacing to bottom */
 footer ul li{
     list-style: none;
     padding-bottom: 2%;
 }
+/* Styling to change color of footer hovers to help distinguish selection */
 footer ul li a:hover{
     background-color: #F89F0F;
     color: #333126;
@@ -179,6 +176,7 @@ footer ul li a:hover{
 footer{
     position: sticky;
 }
+/* Styling for copyright message at bottom of all pages */
 .copyright-bottom{
     width: 100%;
     background-color: #F89F0F;
@@ -211,6 +209,7 @@ footer{
     .hamburger{
         display: none;
     }
+    /* Styling to change direction of footer on larger devices */
     .footer-container{
         background-color: #333126;
         display: flex;
@@ -227,7 +226,7 @@ footer{
     }
     
 }
-/* desktop */
+/* Styling for desktop */
 @media only screen and (min-width: 1080px){
     .active{
         position: fixed;

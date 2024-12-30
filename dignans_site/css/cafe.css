@@ -8,6 +8,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
+/* Pricelist container div */
 .table-container{
     display: flex;
     flex-direction: column;
@@ -17,47 +18,51 @@ main{
     border: #f89f0f solid 3px;
     color: #f89f0f;
     margin: 5%;
-    
-
 }
+/* Styling for coffee pricelist */
 .table1{
     display: flex;
     flex-direction: row;
     margin-top: 3%;
     margin-bottom: 3%;
 }
+/* Styling for coffee pricelist image */
 .table1 img{
     display: flex;
     border: solid 3px #f89f0f;
     margin-right: 3%;
 }
+/* Styling for lunch pricelist */
 .table2{
     display: flex;
     flex-direction: row;
     margin-bottom: 3%;
 }
+/* Styling for lunch pricelist image */
 .table2 img{
     display: flex;
     border: solid 3px #f89f0f;
     margin-left: 3%;
 }
+/* Styling for hot food pricelist */
 .table3{
     display: flex;
     flex-direction: row;
     margin-bottom: 3%;
 }
+/* Styling for hot food pricelist image */
 .table3 img{
     display: flex;
     border: solid 3px #f89f0f;
     margin-right: 3%;
 }
-
+/* Styling for table headings in first div */
 th{
     text-align: left;
     padding-bottom: 4%;
 }
 
-
+/* Styling container for second div with paragraph of info */
 .cafe-paragraph{
     border: 3px solid #f89f0f;
     width: 90%;
@@ -68,9 +73,11 @@ th{
     text-align: justify;
   
 }
+/* Styling for second div image */
 .cafe-paragraph img{
     display: flex;
 }
+/* Styling for images of cafe exterior */
 .cafe1{
     float: right;
     margin-left: 5%;
@@ -79,34 +86,40 @@ th{
     width: 40%;
     border: #f89f0f solid 3px;
 }
+/* Styling for images of cafe interior*/
 .cafe2{
     float: left;
     margin-right: 5%;
-    
     margin-top: 5%;
     width: 40%;
     border: #f89f0f solid 3px;
 }
+/* Spacing for pricelist headings */
 h2{
     margin-top: 5%;
     padding-bottom: 10%;
 }
+/* Spacing for address */
 .address{
     margin-top: 5%;
     margin-left: 50%;
 }
+/* Styling for map */
 iframe{
     margin-top:9%;
     margin-left: 5%;
 }
+/* Styling for delivery message at bottom of page */
 .delivery-message{
     text-align: center;
     padding-top: 10%;
 }
+/* Allow space below address heading */
 .address h3{
     padding-bottom: 5%;
 }
 
+/* Styling for larger devices */
 @media only screen and (min-width: 991px){
     main{
         flex-direction: row;
