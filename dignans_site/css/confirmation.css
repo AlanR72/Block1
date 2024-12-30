@@ -35,7 +35,7 @@ p{
     text-align: center;
 }
 /* Differentiate customers stored details using color and font weight to improve readability */
-span{
+.stored_info{
     color: darkgreen;
     font-weight: bold;
 }
