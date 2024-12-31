@@ -106,7 +106,7 @@ nav a:hover, .current{
     display: flex;
     
 }
-/* Background image for index page */
+/* Background image for index page header */
 .header{
     background-image: url(../media/main3.jpg);
     display: flex;
