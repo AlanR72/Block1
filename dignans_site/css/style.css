@@ -13,15 +13,7 @@ body{
     width: 100%;
     font-size: 1rem;
 }
-/* Styling for heading on index page */
-.header-title{
-    font-size: 3em;
-    color:#F89F0F;
-    padding: 10px;
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
 /* Styling for navigation container */
 nav{
     width: 100%;
@@ -114,16 +106,6 @@ nav a:hover, .current{
     display: flex;
     
 }
-/* Style for footer container div */
-.footer-container{
-    background-color: #333126;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    
-}
 /* Background image for index page */
 .header{
     background-image: url(../media/main3.jpg);
@@ -133,6 +115,66 @@ nav a:hover, .current{
     background-size: cover;
     background-position: center;
     align-items:flex-end;
+}
+/* Styling for heading on index page */
+.header-title{
+    font-size: 3em;
+    color:#F89F0F;
+    padding: 10px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Container for div with welcome message */
+.message_wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Styling for welcome message */
+.welcome_message{
+    background-color: #F89F0F;
+    border: #333126 solid 3px;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 3%;
+}
+h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+}
+/* Styling to float text around image and space for improved reading */
+.welcome_message img{
+    width: 40%;
+    display: flex;
+    border: #333126 solid 3px;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: right;
+    margin-top: 5%;;
+}
+
+
+/* Styling for row of 4 images on index page */
+.welcome_images img{
+    width: 21%;
+    margin: 2%;
+    margin-top: 7%;;
+}
+
+
+/* Style for footer container div */
+.footer-container{
+    background-color: #333126;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
 }
 
 /* Styling for footer contact options */
@@ -224,7 +266,9 @@ footer{
     .footer-nav{
         text-align: left;
     }
-    
+    .welcome_message{
+        font-size: 1.5em;
+    }
 }
 /* Styling for desktop */
 @media only screen and (min-width: 1080px){
