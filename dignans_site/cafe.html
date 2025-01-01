@@ -40,6 +40,25 @@
         <div id="mobile-click" class="hamburger">&#8801</div>
     </nav>
     <main>
+        <!-- Section to allow first 2 divs to display independently from 3rd div on large devices -->
+        <section class="section1">
+        <!-- Div containing info, address details and iframe with map of location -->
+        <div class="cafe-paragraph">
+            
+            <img class="cafe1" src="/media/cafe-frontage1.jpg" alt="Cafe exterior">
+            <h2>Dignans Cafe</h2>
+            <p>Nestled on a quiet street corner, the café exudes a cozy, inviting atmosphere with its warm wooden tables and soft lighting. The scent of freshly brewed coffee wafts through the air, enticing passersby to step inside. The walls are adorned with local artwork, creating a sense of community and a relaxed ambiance. Large windows offer views of the bustling street outside, while indoor plants add a touch of greenery to the space. The café's menu boasts an array of freshly prepared pastries, sandwiches, and salads, all made with locally sourced ingredients. Whether you're in the mood for a quick bite or a leisurely afternoon coffee, this café is the perfect escape.</p>
+            <img class="cafe2" src="/media/cafepic2.jpg" alt="Cafe interior">
+            <div class="address"><h3>We are here:</h3>
+            <p>Dignans Catering</p>
+            <p>53 Leith Street</p>
+            <p>Edinburgh</p>
+            <p>EH16 5BG</p></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8935.942862552589!2d-3.196412358523502!3d55.949619494262805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh!5e0!3m2!1sen!2suk!4v1732669787309!5m2!1sen!2suk" width="150px" height="176px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="delivery-message">
+            <p>REMEMBER WE DELIVER WITHIN A 10 MILE RADIUS!</p>
+            </div>
+        </div>
         <!-- Div containing 3 tables with cafe pricelist -->
         <div class="table-container">
             <h2>Cafe Price List</h2>
@@ -140,24 +159,24 @@
                 </table>
             </div>
         </div>
-        <!-- Div containing info, address details and iframe with map of location -->
-        <div class="cafe-paragraph">
-            
-            <img class="cafe1" src="/media/cafe-frontage1.jpg" alt="Cafe exterior">
-            <h2>Dignans Cafe</h2>
-            <p>Nestled on a quiet street corner, the café exudes a cozy, inviting atmosphere with its warm wooden tables and soft lighting. The scent of freshly brewed coffee wafts through the air, enticing passersby to step inside. The walls are adorned with local artwork, creating a sense of community and a relaxed ambiance. Large windows offer views of the bustling street outside, while indoor plants add a touch of greenery to the space. The café's menu boasts an array of freshly prepared pastries, sandwiches, and salads, all made with locally sourced ingredients. Whether you're in the mood for a quick bite or a leisurely afternoon coffee, this café is the perfect escape.</p>
-            <img class="cafe2" src="/media/cafepic2.jpg" alt="Cafe interior">
-            <div class="address"><h3>We are here:</h3>
-            <p>Dignan’s Catering</p>
-            <p>53 Leith Street</p>
-            <p>Edinburgh</p>
-            <p>EH16 5BG</p></div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8935.942862552589!2d-3.196412358523502!3d55.949619494262805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh!5e0!3m2!1sen!2suk!4v1732669787309!5m2!1sen!2suk" width="150px" height="176px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="delivery-message">
-            <p>REMEMBER WE DELIVER WITHIN A 10 MILE RADIUS!</p>
-            </div>
-        </div>
-            
+        </section>
+        <!-- Section to display independent of first 2 divs contained in section 1 -->
+        <section class="section2">
+        <!-- Div with list of opening hours -->
+        <div class="opening_hours">
+            <h2> Cafe Opening Hours</h2>
+            <ul>
+                <!-- Use of pre tag to allow even spacing in list element -->
+                <li><pre>Monday      6.30am - 5pm</pre></li>
+                <li><pre>Wednesday   6.30am - 5pm</pre></li>
+                <li><pre>Thursday    6.30am - 5pm</pre></li>
+                <li><pre>Friday      6.30am - 5pm</pre></li>
+                <li><pre>Saturday    6.30am - 5pm</pre></li>
+                <li><pre>Sunday      8.00am - 4pm</pre></li>
+
+            </ul>
+        </div> 
+        </section>   
     </main>
     
 </body>
