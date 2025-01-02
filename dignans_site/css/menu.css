@@ -13,7 +13,13 @@ body{
 .menu-header{
     margin-top: 5%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+
 /* Container div for all clickable boxes on main page */
 .menu-wrapper{
     display: flex;
