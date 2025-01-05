@@ -1,13 +1,20 @@
 /* Additional styling for about page */
 
-/* Main wrapper for containing divs displaying column for mobile */
+/* Background image */
 main{
+    background-image: url(/media/aboutbackground.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Wrapper for first 2 containing divs displaying column for mobile and switching to  display as row for larger devices using media query */
+
+.info{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #333126;
-    height: 100%;
-    width: 100%; 
+    
 }
 /* First div with plate image */
 .section1{
@@ -59,6 +66,7 @@ h3{
     margin-right: 12.5%;
     margin-left: 12.5%;
     border-radius: 2%;
+    padding-bottom: 5%;
 }
 /* Styling forchef image */
 .chef-image img{
@@ -75,10 +83,49 @@ h3{
     margin: 0px 20px 0px 20px;
 }
 
+/* Styling for mission statement section at bottom using blockquotes */
+.mission_statement{
+    width:100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    position: relative;
+    padding-bottom: 3%;
+}
+h3{
+    width: 100%;
+    text-align: center;
+}
+blockquote{
+    border: none;
+    color: #333126;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    width: 80%;
+}
+blockquote h3{
+    font-size: 30px;
+    line-height: 120%;
+}
+blockquote h3:before{
+    content: open-quote;
+    font-weight: bold;
+    font-size: 100px;
+    color: #333126;
+    
+}
+blockquote h3:after{
+    content: close-quote;
+    font-weight: bold;
+    font-size: 100px;
+    color: #333126;
+    float: right;
+    position: absolute;
+    right: 30px;
+}
+
 /* Media query styling for larger devices */
 @media only screen and (min-width: 991px){
-    /* Main section switched to row */
-    main{
+    /* info div section switched to row */
+    .info{
         flex-direction: row;
     }
     .section1{
@@ -90,10 +137,20 @@ h3{
         width: 100%;
         
     }
-
-    /* Background image */
-    main{
-        background-image: url(/media/aboutbackground.jpg);
-        background-size: cover;
+    /* Positioning for mission statement message */
+    blockquote h3{
+        font-size: 2.5em;
+        text-align: right;
+    }
+    blockquote h3:after{
+        right:100px;
+    }
+    blockquote h3:before{
+        padding-right: 7%;
+        padding-left: 5%;
     }
 }
+
+
+
+    
