@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Example</title>
+    <!--Specific stylesheet link for print css-->
+    <link rel="stylesheet" href="/css/print.css">
+    <!--Stylesheet for normal css-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Website Header</h1>
+    </header>
+
+    <div class="content">
+        <h2>Welcome to My Page</h2>
+        <p>This content will appear on both screen and print.</p>
+    </div>
+    
+    <div class="print-only">
+        <p>This text only appears in the print version for additional notes.</p>
+    </div>
+
+    <footer>
+        <p>Website Footer - This will not be printed</p>
+    </footer>
+
+    <button class="print-button" onclick="enhancedPrint()">Print this page</button>
+
+    <script>
+        function enhancedPrint(){
+            document.body.classList.add('printing');
+            window.print();
+
+            document.body.classList.remove('printing');
+        }
+    </script>
+</body>
+</html>

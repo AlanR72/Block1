@@ -1,0 +1,30 @@
+/*CSS specifically for print options*/
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+}
+header, footer, .print-button{
+    display: block;
+}
+.print-only{
+    display: none;
+}
+@media print{
+    header, footer, .print-button{
+        display: none;
+    }
+
+.print-only{
+    display: block;
+}
+body{
+    font-size: 14px;
+    color: #000;
+}
+*{
+    background: none !important;
+    color: #000 !important;
+}
+}
