@@ -29,6 +29,11 @@ main{
     border-radius: 2%;
     margin-left: 12.5%;
     padding-bottom: 20px;
+    /* animation */
+    position: relative;
+    animation-name: section1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
 }
 /* Styling for first section image */
 .plate-image img{
@@ -67,6 +72,11 @@ h3{
     margin-left: 12.5%;
     border-radius: 2%;
     padding-bottom: 5%;
+    /* animation */
+    position: relative;
+    animation-name: section2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
 }
 /* Styling forchef image */
 .chef-image img{
@@ -149,6 +159,15 @@ blockquote h3:after{
         padding-right: 7%;
         padding-left: 5%;
     }
+}
+/* Code for animation */
+@keyframes section1{
+    from{right:300px;}
+    to{right:0px}
+}
+@keyframes section2{
+    from{left:300px;}
+    to{left:0px}
 }
 
 

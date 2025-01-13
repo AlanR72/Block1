@@ -9,11 +9,12 @@ main{
     
     
 }
-/* First 2 divs contained in section to display as row for large devices via media query */
+/* First 2 divs contained in section to display as row for large devices via media query. Animated to fade in over 3s */
 .section1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 3s;
 }
 /* Styling for pricelist container div */
 .table-container{
@@ -171,4 +172,9 @@ iframe{
         height: 198px;
     }
    
+}
+/* Code to control opacity of animation on section1 */
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
 }

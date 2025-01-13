@@ -116,7 +116,7 @@ nav a:hover, .current{
     background-position: center;
     align-items:flex-end;
 }
-/* Styling for heading on index page */
+/* Styling for heading on index page including animation */
 .header-title{
     font-size: 3em;
     color:#F89F0F;
@@ -124,6 +124,11 @@ nav a:hover, .current{
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
+    /* animation */
+    position: relative;
+    animation-name: header-title;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
 /* Container for div with welcome message */
 .message_wrapper{
@@ -154,16 +159,15 @@ h3{
     margin-left: 3%;
     margin-right: 3%;
     float: right;
-    margin-top: 5%;
-
+    margin-top: 5%;;
 }
 
 
 /* Styling for row of 4 images on index page */
 .welcome_images img{
-    width: 19%;
-    margin: none;
-    margin-top: 5%;
+    width: 21%;
+    margin: 2%;
+    margin-top: 7%;;
 }
 
 
@@ -291,6 +295,11 @@ footer{
         height: 75%;
         margin-top: 15px;
     }
+}
+/* Code to animate heading */
+@keyframes header-title{
+    from{left:300px;}
+    to{left:0px}
 }
 
 

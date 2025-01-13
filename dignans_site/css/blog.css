@@ -11,12 +11,15 @@ main{
     font-size: 1.3em;
     
 }
-/* Styling for top div */
+/* Styling for top div animated to float in from right*/
 .blog-welcome{
+    padding: 5%;
     width: 90%;
     color: #333126;
     margin-top: 5%;
     border: #333126 solid 2px;
+    /* animation */
+    animation: fadeIn 2s;
 }
 /* Top div image styling */
 .blog-img img{
@@ -27,13 +30,19 @@ main{
 }
 /* Special offer blog styling */
 .blog-special-offer{
+    padding: 5%;
     display: flex;
     flex-direction: column;
     width: 90%;
     background-color: #333126;
     color: #f89f0f;
     margin-top: 5%;
-    border: #f89f0f solid 2px;;
+    border: #f89f0f solid 2px;
+    /* animation */
+    position: relative;
+    animation-name: blog-special-offer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 /* Styling for burger prices */
 .blog-special-offer ul, h3{
@@ -162,4 +171,13 @@ p{
         width: 100%;
     }
     
+}
+/* Code for animation */
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@keyframes blog-special-offer{
+    from{right:2000px;}
+    to{right:0px}
 }

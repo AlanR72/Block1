@@ -28,6 +28,14 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
+/* Animation to emphisise instructions for page functions */
+.page_instruction{
+    position: relative;
+    animation-name: page_instruction;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    
+}
 /* Container div for 'contents of each' clickable box on main page */
 .selection{
     display: flex;
@@ -100,7 +108,7 @@ button{
     flex-direction: column;
     overflow: scroll;
     color: #333126;
-    
+    animation: fadeIn 3s;
 }
 /* Styling for main headings on 'hidden' menus */
 .show h1,h3{
@@ -211,4 +219,13 @@ button{
         display: none;
     }
     
+}
+/* Code for animation */
+@keyframes page_instruction{
+    from{left:300px;}
+    to{left:0px}
+}
+@keyframes fadeIn{
+0%{opacity:0;}
+    100%{opacity:1;}
 }
