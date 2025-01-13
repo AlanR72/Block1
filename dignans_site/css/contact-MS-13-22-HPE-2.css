@@ -1,0 +1,84 @@
+main{
+    background-image: url(/media/fork-and-pasta1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+h1,h2,h3{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: #F89F0F;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 400px;
+    width: 85%;
+}
+.form-header{
+    color: #333126;
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+label{
+    font-size: 20px;;
+    padding: 4%;
+    margin-left: 2%;
+}
+input{
+    font-size: 20px;
+    padding: 2%;
+    width: 90%;
+    margin-left: 5%;
+}
+textarea{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2%;
+    width: 90%;
+    margin-left: 5%;
+    
+}
+
+button{
+    background-color: #333126;
+    color: #F89F0F;
+    padding: 3%;
+    font-size: 2em;
+    margin: 5%;
+    cursor: pointer;
+}
+span{
+    font-size: 20px;
+    text-align: center;
+    padding: 3%;
+}
+
+@media only screen and (min-width: 991px){
+    main{
+        background-position: top;
+        justify-content: left;
+    }
+    .form-wrapper{
+        width: 35%;
+        height: 80%;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+}
+@media only screen and (min-width: 1080px){
+    .content{
+        height: 80%;
+    }
+} 
+.status-message{
+    text-align: center;
+    font-size: 1.5em;;
+}

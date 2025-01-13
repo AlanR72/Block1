@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignans Menu Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="dignans-logo">
+                <a id="logo" href="/"><img src="/media/dignanlogo1.png" alt="Dignans Logo"></a>
+            </div>
+            <ul id="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cafe.html">Cafe</a></li>
+                <li><a href="menu.html" class="current">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div id="mobile-click" class="hamburger">&#8801</div>
+    </nav>
+    <main>
+        <div class="menu-header">
+            <h3>Welcome to Dignans Menu Page</h3>
+            <p>Click on an item below for detailed a description.</p>
+        </div>
+        <div class="menu-wrapper">
+
+            <div class="selection">
+                <div class="img-container" id="partyA">
+                <img src="/media/PartyA-Images/vol-au-vents1.jpg" alt="plate of vol-au-vonts">
+                </div>
+                <button class="clicker" id="click1">PARTY MENU A</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="partyB">
+                <img src="/media/PartyB-Images/cocktailsandwich3.jpg" alt="image of a delicious sandwich">
+                </div>
+                <button class="clicker" id="click1">PARTY MENU B</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="lunchMenu">
+                <img src="/media/Lunch-Images/rolls1.jpg" alt="image of a filled baguette">
+                </div>
+                <button class="clicker" id="click1">LUNCH MENU</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="dressing">
+                <img src="/media/Dressing-Images/quiche1.jpg" alt="Quiche on a plate">
+                </div>
+                <button class="clicker" id="click1">DRESSING</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="office_catering">
+                <img src="/media/OfficeCatering-Images/bagels1.jpg" alt="Various delicious bagels">
+                </div>
+                <button class="clicker" id="click1">OFFICE CATERING</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="everyday_extras">
+                <img src="/media/EverydayExtras-Images/seafood1.jpg" alt="plate of seafood">
+                </div>
+                <button class="clicker" id="click1">EVERYDAY EXTRAS</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="exec_menuA">
+                <img src="/media/ExecMenuA/ham1.jpg" alt="joint of honey glazed ham">
+                </div>
+                <button class="clicker" id="click1">EXECUTIVE MENU A</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="exec_menuB">
+                <img src="/media/ExecMenuB/roastbeef1.jpg" alt="plate of roast beef">
+                </div>
+                <button class="clicker" id="click1">EXECUTIVE MENU B</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="exec_menuC">
+                <img src="/media/ExecMenuC/pennepasta1.jpg" alt="plate of pasta">
+                </div>
+                <button class="clicker" id="click1">EXECUTIVE MENU C</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="breakfast">
+                <img src="/media/Breakfast-Images/breakfast1.jpg" alt="fried breakfast">
+                </div>
+                <button class="clicker" id="click1">BREAKFAST</button>
+            </div>
+            <div class="selection">
+                <div class="img-container" id="bbq">
+                <img src="/media/OfficeBarb-Images/skewers1.jpg" alt="Skewers on a barbecue">
+                </div>
+                <button class="clicker" id="click1">OFFICE BARBEQUES</button>
+            </div>
+            
+        </div>
+        <div class="menu-model hidden" id="bbq_popup ">Barbecue</div>
+        <div class="menu-model hidden" id="breakfast_popup">Breakfast</div>
+        <div class="menu-model hidden" id="exec_menuC_popup">Executive Menu C</div>
+        <div class="menu-model hidden" id="exec_menuB_popup">Executive Menu B</div>
+        <div class="menu-model hidden" id="exec_menuA_popup">Executive Menu A</div>
+        <div class="menu-model hidden" id="everyday_extras_popup">Everyday Extras</div>
+        <div class="menu-model hidden" id="office_catering_popup">Office Catering</div>
+        <div class="menu-model hidden" id="dressing_popup">Dressing</div>
+        <div class="menu-model hidden" id="lunchMenu_popup">Lunch Menu</div>
+        <div class="menu-model hidden" id="partyB_popup">Party B Menu</div>
+        <div class="menu-model hidden" id="partyA_popup">Party A Menu</div>
+    </main>
+    
+</body>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="/"><img src='/media/dignanlogo1.png'></a>
+        </div>
+        <div class="contact-details">
+            <ul>
+                <li><a href="tel:+441412237840"><i class="fa-solid fa-phone"><span>    01412237840</span></i></a></li>
+                <li><a href="mailto:info@dignans.com"><i class="fa regular fa-envelope"></i><span>    info@dignans.com</span></a></li>
+                <li><a href="https://wa.me/+447776431307"><i class="fa-brands fa-whatsapp"></i><span>    Send WhatsApp message</span></a></li>
+                <li><a href="sms:+447776431307"><i class="fa-solid fa-mobile-screen"></i><span>    Send text message</span></a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="social-media-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+<div class="copyright-bottom">&copy; 2024 Dignans Catering</div>
+</html>
