@@ -139,7 +139,7 @@ nav a:hover, .current{
     width: 90%;
     margin-top: 5%;
     margin-bottom: 5%;
-    padding: 3%;
+    padding: 5%;
 }
 h3{
     margin-top: 5%;
@@ -154,15 +154,16 @@ h3{
     margin-left: 3%;
     margin-right: 3%;
     float: right;
-    margin-top: 5%;;
+    margin-top: 5%;
+
 }
 
 
 /* Styling for row of 4 images on index page */
 .welcome_images img{
-    width: 21%;
-    margin: 2%;
-    margin-top: 7%;;
+    width: 19%;
+    margin: none;
+    margin-top: 5%;
 }
 
 
